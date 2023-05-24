@@ -1,8 +1,8 @@
 import re
 import ast
 import argparse
-import crawler
-import citer
+import .crawler
+import .citer
 
 FILTERS = ['kddcup', 'w.html', 'lbr.html']
 
