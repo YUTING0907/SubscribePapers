@@ -57,10 +57,22 @@ async def clean_author_name(author):
 
 
 async def search_paper_info(session, paper_item):
-    filter_keywords = ['Virtual Event', 'Proceedings', 
+    '''filter_keywords = ['Virtual Event', 'Proceedings', 
         'International Conference', 'Advances in Information Retrieval',
         'SIGIR Conference', 'Workshop', 'tutorial', 'The Web Conference ', 
         'ACM SIGKDD Conference', 'International World Wide Web', 'ACM Conference on Recommender Systems']
+    '''
+    filter_keywords = ['Computer Vision and Pattern Recognition',
+                       'International Conference on Learning Representations',
+                       'Workshop',
+                       'Neural Information Processing Systems',
+                       'Competition',
+                       'Computer Vision',
+                       'International Conference on Computer Vision',
+                       'Conference on Artificial Intelligence',
+                       'Association for Computational Linguistics' 
+                      ]
+    
     try:
         paper_url = paper_item.find("li", class_="drop-down").div.a["href"]
         paper_name = paper_item.find(class_="title", itemprop="name")
@@ -142,7 +154,7 @@ def save_results(results, filename='results.json'):
         
 def run_all(
     #confs=['www', 'kdd', 'cikm', 'sigir', 'wsdm', 'ecir', 'recsys'],
-    confs=['www', 'cvpr', 'iclr', 'neurlps', 'eccv', 'ecai', 'iccv','aaai','acl'],
+    confs=['www', 'cvpr', 'iclr', 'nips', 'eccv', 'iccv','aaai','acl'],
     filter_keywords=['kddcup', 'w.html', 'lbr.html'],
     start_year=2012,
     filename='results.json',
