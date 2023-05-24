@@ -42,22 +42,3 @@ https://sct.ftqq.com/
 | [2022](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/cvpr/cvpr2022.md) | [2022](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/iclr/iclr2022.md) | [2022](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/nips/nips2022.md) | [2022](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/eccv/eccv2022.md) | [2022](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/iccv/iccv2022.md) | [2022](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/aaai/aaai2022.md) |
 | [2023](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/cvpr/cvpr2023.md) | [2023](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/iclr/iclr2023.md) | [2023](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/nips/nips2023.md) | [2023](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/eccv/eccv2023.md) | [2023](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/iccv/iccv2023.md) | [2023](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/aaai/aaai2023.md) |
 
-
-
-
-
-CVPR	ICLR	NeurIPS	ECCV	ICCV	AAAI	ACL
-2012	2012	2012	  2012	2012	2012	2012
-2013	2013	2013	  2013	2013	2013	2013
-2014	2014	2014	  2014	2014	2014	2014
-2015	2015	2015	  2015	2015	2015	2015
-2016	2016	2016	  2016	2016	2016	2016
-2017	2017	2017	  2017	2017	2017	2017
-2018	2018	2018	  2018	2018	2018	2018
-2019	2019	2019	  2019	2019	2019	2019
-2020	2020	2020	  2020	2020	2020	2020
-2021	2021	2021	  2021	2021	2021	2021
-2022	2022	2022	  2022	2022	2022	2022
-2023	2023	2023	  2023	2023	2023	2023
-  
-
