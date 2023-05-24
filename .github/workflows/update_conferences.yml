@@ -24,8 +24,7 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
           
       - name: Install dependencies
-        run: pip install openpyxl tqdm
-
+        run: pip install openpyxl tqdm requests bs4
 
       - name: Update the cache file from the issue
         run: |
