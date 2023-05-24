@@ -4,7 +4,9 @@ env:
   PYTHON_VERSION: "3.8" # set this to the Python version to use
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-on: push
+on:
+  schedule:
+    - cron: '0 0 * * *' # 每天 UTC 时间 00:00 触发, 即上海时间8点
 
 jobs:
   daily-push:
