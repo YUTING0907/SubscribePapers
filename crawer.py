@@ -12,16 +12,10 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
 }
 
-
-def get_soup(conf):
-    url = f'https://dblp.org/db/conf/{conf}/index.html'
-    r = requests.get(url, headers=HEADERS)
-    if r.status_code != 200:
-        print(
-            f"Error: Failed to fetch {conf} with status code {r.status_code}")
-        return None
-    return conf, BeautifulSoup(r.text, "html.parser")
-
+def load_results(filename='results.json'):
+    if not os.path.exists(filename):
+        return {}
+    return json.load(open(filename, 'r'))
 
 def get_links(results, confs, filter_keywords=[], start_year=2012):
     rsp_soup = []
@@ -49,6 +43,14 @@ def get_links(results, confs, filter_keywords=[], start_year=2012):
 
     return links_all
 
+def get_soup(conf):
+    url = f'https://dblp.org/db/conf/{conf}/index.html'
+    r = requests.get(url, headers=HEADERS)
+    if r.status_code != 200:
+        print(
+            f"Error: Failed to fetch {conf} with status code {r.status_code}")
+        return None
+    return conf, BeautifulSoup(r.text, "html.parser")
 
 async def clean_author_name(author):
     return re.sub(r'\d+|-', '', author['title']).strip()
@@ -125,12 +127,11 @@ async def crawl(urls, names, results, threads):
             await f
     return results
 
-
-def load_results(filename='results.json'):
-    if not os.path.exists(filename):
-        return {}
-    return json.load(open(filename, 'r'))
-
+def filter_results(results):
+    for conf in results:
+        results[conf] = [
+            paper_item for paper_item in results[conf] if paper_item is not None]
+    return results
 
 def save_results(results, filename='results.json'):
     try:
@@ -138,27 +139,26 @@ def save_results(results, filename='results.json'):
     except IOError as e:
         print(f"Error: Failed to save results to {filename}: {e}")
 
-def filter_results(results):
-    for conf in results:
-        results[conf] = [
-            paper_item for paper_item in results[conf] if paper_item is not None]
-    return results
-
+        
 def run_all(
-    confs=['www', 'kdd', 'cikm', 'sigir', 'wsdm', 'ecir', 'recsys'],
+    #confs=['www', 'kdd', 'cikm', 'sigir', 'wsdm', 'ecir', 'recsys'],
+    confs=['www', 'cvpr', 'iclr', 'neurlps', 'eccv', 'ecai', 'iccv','aaai','acl'],
     filter_keywords=['kddcup', 'w.html', 'lbr.html'],
     start_year=2012,
     filename='results.json',
     threads = 20
 ):
+    ####1.load result.json
     results = load_results(filename)
+    ####2.get links
     links = get_links(results, confs, filter_keywords, start_year)
     if len(links) > 0:
         names, urls = zip(*links)
         results = asyncio.run(crawl(urls, names, results, threads))
+    ####3.filter results
     results = filter_results(results)
+    ####4.save results
     save_results(results, filename)
-
 
 if __name__ == '__main__':
     run_all()
