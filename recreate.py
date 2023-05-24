@@ -18,8 +18,11 @@ def parse_issue(issue):
         issue = issue.replace("\\n", "").replace("\\r", "")
         info = ast.literal_eval(issue)
         print(info)
-        assert isinstance(info, list)
-        assert len(info) > 0 and info[0].get("filter") and info[0].get("confs") and info[0].get("year")
+        assert isinstance(info, list) and len(info) > 0
+        issue_dict = info[0]
+        assert "confs" in issue_dict and "year" in issue_dict and "filter" in issue_dict
+        #assert isinstance(info, list)
+        #assert len(info) > 0 and info[0].get("filter") and info[0].get("confs") and info[0].get("year")
     except:
         raise Exception("[-] Wrong input!")
     return info
