@@ -177,6 +177,7 @@ def cronjob():
 
         push_title = f'Arxiv:{QUERY}[{ii}]@{today}'
         msg_content = f"[{msg_title}]({url})\n\n{msg_pub_date}\n\n{msg_url}\n\n{msg_translated}\n\n{msg_summary}\n\n"
+        print(msg_content)
 
         send_wechat_message(push_title, msg_content, SERVERCHAN_API_KEY)
 
