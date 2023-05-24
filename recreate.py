@@ -50,13 +50,11 @@ def main():
     info = parse_issue(args.issue)
     assert len(info) == 1 # confs and year
     item = info[0]
+    print(item)
     ###3.crawle conferences info
     run(confs=item['confs'], start_year=item['year'],filter_str=item['filter'])
 
 if __name__ == "__main__":
     main()
-
-
-
 
     
