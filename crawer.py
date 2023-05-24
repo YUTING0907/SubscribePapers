@@ -152,12 +152,13 @@ def run_all(
     results = load_results(filename)
     ####2.get links
     links = get_links(results, confs, filter_keywords, start_year)
+    ####3.crawl
     if len(links) > 0:
         names, urls = zip(*links)
         results = asyncio.run(crawl(urls, names, results, threads))
-    ####3.filter results
+    ####4.filter results
     results = filter_results(results)
-    ####4.save results
+    ####5.save results into results.json
     save_results(results, filename)
 
 if __name__ == '__main__':
