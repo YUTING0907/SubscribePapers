@@ -3,11 +3,11 @@ import ast
 import argparse
 import crawler
 import citer
-import render
 
 FILTERS = ['kddcup', 'w.html', 'lbr.html']
 
 def set_args():
+    # 解析issue模版参数 --issue ${{ toJson(github.event.issue.body) }}
     parser = argparse.ArgumentParser()
     parser.add_argument("--issue", "-i", type=str, help="input issue", required=True)
     args = parser.parse_args()
@@ -36,29 +36,19 @@ def run(confs_str, start_year, filter_str=''):
 
     start_year = int(start_year)
 
-    crawler.run_all(
-        confs=confs,
-        filter_keywords=FILTERS,
-        start_year=start_year,
-        filename='results.json',
-        threads=20
-    )
+    crawler.run_all(confs=confs,filter_keywords=FILTERS,start_year=start_year,filename='results.json',threads=20)
 
-    citer.run_all(
-        confs=[conf + str(start_year) for conf in confs]
-        mode='parallel'
-    )
+    citer.run_all(confs=[conf + str(start_year) for conf in confs],mode='parallel')
 
 def main():
+    ###1.get issue template params
     args = set_args()
+    ###2.parse issue template params
     info = parse_issue(args.issue)
     assert len(info) == 1 # confs and year
     item = info[0]
-    run(
-        confs=item['confs'], 
-        start_year=item['year'],
-        filter_str=item['filter'],
-    )
+    ###3.crawle conferences info
+    run(confs=item['confs'], start_year=item['year'],filter_str=item['filter'])
 
 if __name__ == "__main__":
     main()
