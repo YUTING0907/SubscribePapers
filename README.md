@@ -1,6 +1,6 @@
 # SubscribePapers
 
-### * 利用GitHub Action每天定时推送最新的cs.IR的论文 (也可以指定query)
+### * 利用GitHub Action每天定时推送最新的cs.CV的论文 (也可以指定query)
 ### * 彩云小译翻译摘要
 ### * Server酱提供从服务器到微信端的推送
 
