@@ -52,7 +52,7 @@ def main():
     item = info[0]
     print(item)
     ###3.crawle conferences info
-    run(confs=item['confs'], start_year=item['year'],filter_str=item['filter'])
+    run(confs_str=item['confs'], start_year=item['year'],filter_str=item['filter'])
 
 if __name__ == "__main__":
     main()
