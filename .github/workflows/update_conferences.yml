@@ -29,7 +29,7 @@ jobs:
 
       - name: Update the cache file from the issue
         run: |
-          python update.py --issue ${{ toJson(github.event.issue.body) }}
+          python recreate.py --issue ${{ toJson(github.event.issue.body) }}
           python render.py
         
         
