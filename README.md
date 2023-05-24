@@ -27,7 +27,13 @@
 https://sct.ftqq.com/
   
 ## 二、CV顶会论文列表
-|CVPR|ICLR|NeurIPS|ECCV|ICCV|AAAI|ACL|
+| CVPR | ICLR |NeurIPS| ECCV | ICCV | AAAI  |ACL|
+| ---- | ---- | ----  | ---- | ---- | ----  |
+|      |      |       |      |       |      |
+|      |      |       |      |       |      |
+|      |      |       |      |       |      |
+
+
 CVPR	ICLR	NeurIPS	ECCV	ICCV	AAAI	ACL
 2012	2012	2012	  2012	2012	2012	2012
 2013	2013	2013	  2013	2013	2013	2013
