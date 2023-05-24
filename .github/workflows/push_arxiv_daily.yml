@@ -12,7 +12,7 @@ jobs:
     env:
       SERVERCHAN_API_KEY: ${{ secrets.SERVERCHAN_API_KEY }}
       CAIYUN_TOKEN: ${{ secrets.CAIYUN_TOKEN }}
-      QUERY: "cs.IR"
+      QUERY: "cs.CV"
       LIMITS: 10
 
     permissions:
