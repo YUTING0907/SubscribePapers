@@ -1,6 +1,6 @@
 # SubscribePapers
 
-## Arxiv论文推送bot
+## 一、Arxiv论文推送bot
 ### * 利用GitHub Action每天定时推送最新的cs.CV的论文 (也可以指定query)
 ### * 彩云小译翻译摘要
 ### * Server酱提供从服务器到微信端的推送
@@ -26,7 +26,7 @@
 ### 3.Server酱服务
 https://sct.ftqq.com/
   
-## CV顶会论文列表
+## 二、CV顶会论文列表
 CVPR	ICLR	NeurIPS	ECCV	ICCV	AAAI	ACL
 2012	2012	2012	  2012	2012	2012	2012
 2013	2013	2013	  2013	2013	2013	2013
