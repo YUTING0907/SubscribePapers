@@ -18,12 +18,6 @@ def load_results(filename='results.json'):
     except FileNotFoundError as e:
         raise e.__class__(f"Error loading '{filename}': {str(e)}")
 
-def save_results(results, filename='results.json'):
-    try:
-        with open(filename, 'w') as file:
-            json.dump(results, file, indent=4, ensure_ascii=False)
-    except IOError as e:
-        print(f"Error: Failed to save results to {filename}: {e}")
 
 class CachedDOICounter:
     def __init__(self):
@@ -129,14 +123,24 @@ def fetch(results, confs):
             results.update(data)
     return results
 
+def save_results(results, filename='results.json'):
+    try:
+        with open(filename, 'w') as file:
+            json.dump(results, file, indent=4, ensure_ascii=False)
+    except IOError as e:
+        print(f"Error: Failed to save results to {filename}: {e}")
+        
 def run_all(filename='results.json', confs=None, mode='seq'):
+    ###1.load results.json
     results = load_results(filename)
+    ###2.get papers through DOI
     if confs is None:
         confs = list(results.keys())
     if mode == 'seq':
         results = fetch(results, confs)
     else:
         results = fetch_parallel(results, confs)
+    ###3.save files into results.json
     save_results(results, filename)
 
 if __name__ == '__main__':
