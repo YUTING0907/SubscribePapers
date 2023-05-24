@@ -11,7 +11,7 @@ on:
 
 jobs:
   update-conf-list:
-    if: github.event.label.name == 'require to update confs'
+    if: github.event.label.name == 'require to update conferences'
     runs-on: ubuntu-latest
     permissions:
       issues: write
