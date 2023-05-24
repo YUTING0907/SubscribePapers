@@ -4,8 +4,6 @@ import argparse
 import crawler
 import citer
 
-FILTERS = ['kddcup', 'w.html', 'lbr.html']
-
 def set_args():
     # 解析issue模版参数 --issue ${{ toJson(github.event.issue.body) }}
     parser = argparse.ArgumentParser()
@@ -28,6 +26,7 @@ def parse_issue(issue):
     return info
 
 def run(confs_str, start_year, filter_str=''):
+    FILTERS = ['kddcup', 'w.html', 'lbr.html']
 
     if filter_str:
         FILTERS += filter_str.lower().split(' ')
