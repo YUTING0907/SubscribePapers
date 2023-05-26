@@ -23,7 +23,7 @@
 ### 3.Server酱服务
 https://sct.ftqq.com/
 -------
-推送效果图：
+**推送效果图：**
   
   <img width="991" alt="image" src="https://github.com/YUTING0907/SubscribePapers/assets/30207944/6cd2f04d-048b-496f-9e27-dba85436a59c">
 
