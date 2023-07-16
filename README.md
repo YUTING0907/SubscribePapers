@@ -48,3 +48,12 @@ https://sct.ftqq.com/
 | [2022](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/cvpr/cvpr2022.md) | [2022](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/iclr/iclr2022.md) | [2022](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/nips/nips2022.md) | [2022](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/eccv/eccv2022.md) | [2022](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/iccv/iccv2022.md) | [2022](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/aaai/aaai2022.md) |
 | [2023](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/cvpr/cvpr2023.md) | [2023](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/iclr/iclr2023.md) | [2023](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/nips/nips2023.md) | [2023](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/eccv/eccv2023.md) | [2023](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/iccv/iccv2023.md) | [2023](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/aaai/aaai2023.md) |
 
+## 三、keywords
+专业名词对应的英文
+1.深度学习计算摄影
+**计算机美学  computer aesthetics**
+**图像美学 photo aesthetics** 
+**自动构图 image retargeting**
+**自动美学增强 tone-mapping**
+**图像修复 image inpainting**
+**多重曝光 multiple exposure**
