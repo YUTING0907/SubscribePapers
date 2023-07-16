@@ -50,10 +50,10 @@ https://sct.ftqq.com/
 
 ## 三、keywords
 专业名词对应的英文
-1.深度学习计算摄影
-**计算机美学  computer aesthetics**
-**图像美学 photo aesthetics** 
-**自动构图 image retargeting**
-**自动美学增强 tone-mapping**
-**图像修复 image inpainting**
-**多重曝光 multiple exposure**
+### 1.深度学习计算摄影
+##### **计算机美学  computer aesthetics**
+##### **图像美学 photo aesthetics** 
+##### **自动构图 image retargeting**
+##### **自动美学增强 tone-mapping**
+##### **图像修复 image inpainting**
+##### **多重曝光 multiple exposure**
