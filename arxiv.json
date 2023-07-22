@@ -3001,5 +3001,75 @@
         "pub_date": "2023-07-19",
         "summary": "Prototype-based classification is a classical method in machine learning, and\nrecently it has achieved remarkable success in semi-supervised semantic\nsegmentation. However, the current approach isolates the prototype\ninitialization process from the main training framework, which appears to be\nunnecessary. Furthermore, while the direct use of K-Means algorithm for\nprototype generation has considered rich intra-class variance, it may not be\nthe optimal solution for the classification task. To tackle these problems, we\npropose a novel boundary-refined prototype generation (BRPG) method, which is\nincorporated into the whole training framework. Specifically, our approach\nsamples and clusters high- and low-confidence features separately based on a\nconfidence threshold, aiming to generate prototypes closer to the class\nboundaries. Moreover, an adaptive prototype optimization strategy is introduced\nto make prototype augmentation for categories with scattered feature\ndistributions. Extensive experiments on the PASCAL VOC 2012 and Cityscapes\ndatasets demonstrate the superiority and scalability of the proposed method,\noutperforming the current state-of-the-art approaches. The code is available at\nxxxxxxxxxxxxxx.",
         "translated": ""
+    },
+    {
+        "title": "PAPR: Proximity Attention Point Rendering",
+        "url": "http://arxiv.org/abs/2307.11086v1",
+        "pub_date": "2023-07-20",
+        "summary": "Learning accurate and parsimonious point cloud representations of scene\nsurfaces from scratch remains a challenge in 3D representation learning.\nExisting point-based methods often suffer from the vanishing gradient problem\nor require a large number of points to accurately model scene geometry and\ntexture. To address these limitations, we propose Proximity Attention Point\nRendering (PAPR), a novel method that consists of a point-based scene\nrepresentation and a differentiable renderer. Our scene representation uses a\npoint cloud where each point is characterized by its spatial position,\nforeground score, and view-independent feature vector. The renderer selects the\nrelevant points for each ray and produces accurate colours using their\nassociated features. PAPR effectively learns point cloud positions to represent\nthe correct scene geometry, even when the initialization drastically differs\nfrom the target geometry. Notably, our method captures fine texture details\nwhile using only a parsimonious set of points. We also demonstrate four\npractical applications of our method: geometry editing, object manipulation,\ntexture transfer, and exposure control. More results and code are available on\nour project website at https://zvict.github.io/papr/.",
+        "translated": ""
+    },
+    {
+        "title": "Representation Learning in Anomaly Detection: Successes, Limits and a\n  Grand Challenge",
+        "url": "http://arxiv.org/abs/2307.11085v1",
+        "pub_date": "2023-07-20",
+        "summary": "In this perspective paper, we argue that the dominant paradigm in anomaly\ndetection cannot scale indefinitely and will eventually hit fundamental limits.\nThis is due to the a no free lunch principle for anomaly detection. These\nlimitations can be overcome when there are strong tasks priors, as is the case\nfor many industrial tasks. When such priors do not exists, the task is much\nharder for anomaly detection. We pose two such tasks as grand challenges for\nanomaly detection: i) scientific discovery by anomaly detection ii) a\n\"mini-grand\" challenge of detecting the most anomalous image in the ImageNet\ndataset. We believe new anomaly detection tools and ideas would need to be\ndeveloped to overcome these challenges.",
+        "translated": ""
+    },
+    {
+        "title": "GLSFormer: Gated - Long, Short Sequence Transformer for Step Recognition\n  in Surgical Videos",
+        "url": "http://arxiv.org/abs/2307.11081v1",
+        "pub_date": "2023-07-20",
+        "summary": "Automated surgical step recognition is an important task that can\nsignificantly improve patient safety and decision-making during surgeries.\nExisting state-of-the-art methods for surgical step recognition either rely on\nseparate, multi-stage modeling of spatial and temporal information or operate\non short-range temporal resolution when learned jointly. However, the benefits\nof joint modeling of spatio-temporal features and long-range information are\nnot taken in account. In this paper, we propose a vision transformer-based\napproach to jointly learn spatio-temporal features directly from sequence of\nframe-level patches. Our method incorporates a gated-temporal attention\nmechanism that intelligently combines short-term and long-term spatio-temporal\nfeature representations. We extensively evaluate our approach on two cataract\nsurgery video datasets, namely Cataract-101 and D99, and demonstrate superior\nperformance compared to various state-of-the-art methods. These results\nvalidate the suitability of our proposed approach for automated surgical step\nrecognition. Our code is released at:\nhttps://github.com/nisargshah1999/GLSFormer",
+        "translated": ""
+    },
+    {
+        "title": "AlignDet: Aligning Pre-training and Fine-tuning in Object Detection",
+        "url": "http://arxiv.org/abs/2307.11077v1",
+        "pub_date": "2023-07-20",
+        "summary": "The paradigm of large-scale pre-training followed by downstream fine-tuning\nhas been widely employed in various object detection algorithms. In this paper,\nwe reveal discrepancies in data, model, and task between the pre-training and\nfine-tuning procedure in existing practices, which implicitly limit the\ndetector's performance, generalization ability, and convergence speed. To this\nend, we propose AlignDet, a unified pre-training framework that can be adapted\nto various existing detectors to alleviate the discrepancies. AlignDet\ndecouples the pre-training process into two stages, i.e., image-domain and\nbox-domain pre-training. The image-domain pre-training optimizes the detection\nbackbone to capture holistic visual abstraction, and box-domain pre-training\nlearns instance-level semantics and task-aware concepts to initialize the parts\nout of the backbone. By incorporating the self-supervised pre-trained\nbackbones, we can pre-train all modules for various detectors in an\nunsupervised paradigm. As depicted in Figure 1, extensive experiments\ndemonstrate that AlignDet can achieve significant improvements across diverse\nprotocols, such as detection algorithm, model backbone, data setting, and\ntraining schedule. For example, AlignDet improves FCOS by 5.3 mAP, RetinaNet by\n2.1 mAP, Faster R-CNN by 3.3 mAP, and DETR by 2.3 mAP under fewer epochs.",
+        "translated": ""
+    },
+    {
+        "title": "Learning Dense UV Completion for Human Mesh Recovery",
+        "url": "http://arxiv.org/abs/2307.11074v1",
+        "pub_date": "2023-07-20",
+        "summary": "Human mesh reconstruction from a single image is challenging in the presence\nof occlusion, which can be caused by self, objects, or other humans. Existing\nmethods either fail to separate human features accurately or lack proper\nsupervision for feature completion. In this paper, we propose Dense Inpainting\nHuman Mesh Recovery (DIMR), a two-stage method that leverages dense\ncorrespondence maps to handle occlusion. Our method utilizes a dense\ncorrespondence map to separate visible human features and completes human\nfeatures on a structured UV map dense human with an attention-based feature\ncompletion module. We also design a feature inpainting training procedure that\nguides the network to learn from unoccluded features. We evaluate our method on\nseveral datasets and demonstrate its superior performance under heavily\noccluded scenarios compared to other methods. Extensive experiments show that\nour method obviously outperforms prior SOTA methods on heavily occluded images\nand achieves comparable results on the standard benchmarks (3DPW).",
+        "translated": ""
+    },
+    {
+        "title": "OBJECT 3DIT: Language-guided 3D-aware Image Editing",
+        "url": "http://arxiv.org/abs/2307.11073v1",
+        "pub_date": "2023-07-20",
+        "summary": "Existing image editing tools, while powerful, typically disregard the\nunderlying 3D geometry from which the image is projected. As a result, edits\nmade using these tools may become detached from the geometry and lighting\nconditions that are at the foundation of the image formation process. In this\nwork, we formulate the newt ask of language-guided 3D-aware editing, where\nobjects in an image should be edited according to a language instruction in\ncontext of the underlying 3D scene. To promote progress towards this goal, we\nrelease OBJECT: a dataset consisting of 400K editing examples created from\nprocedurally generated 3D scenes. Each example consists of an input image,\nediting instruction in language, and the edited image. We also introduce 3DIT :\nsingle and multi-task models for four editing tasks. Our models show impressive\nabilities to understand the 3D composition of entire scenes, factoring in\nsurrounding objects, surfaces, lighting conditions, shadows, and\nphysically-plausible object configurations. Surprisingly, training on only\nsynthetic scenes from OBJECT, editing capabilities of 3DIT generalize to\nreal-world images.",
+        "translated": ""
+    },
+    {
+        "title": "CNOS: A Strong Baseline for CAD-based Novel Object Segmentation",
+        "url": "http://arxiv.org/abs/2307.11067v1",
+        "pub_date": "2023-07-20",
+        "summary": "We propose a simple three-stage approach to segment unseen objects in RGB\nimages using their CAD models. Leveraging recent powerful foundation models,\nDINOv2 and Segment Anything, we create descriptors and generate proposals,\nincluding binary masks for a given input RGB image. By matching proposals with\nreference descriptors created from CAD models, we achieve precise object ID\nassignment along with modal masks. We experimentally demonstrate that our\nmethod achieves state-of-the-art results in CAD-based novel object\nsegmentation, surpassing existing approaches on the seven core datasets of the\nBOP challenge by 19.8\\% AP using the same BOP evaluation protocol. Our source\ncode is available at https://github.com/nv-nguyen/cnos.",
+        "translated": ""
+    },
+    {
+        "title": "Driving Policy Prediction based on Deep Learning Models",
+        "url": "http://arxiv.org/abs/2307.11058v1",
+        "pub_date": "2023-07-20",
+        "summary": "In this project, we implemented an end-to-end system that takes in combined\nvisual features of video frames from a normal camera and depth information from\na cloud points scanner, and predicts driving policies (vehicle speed and\nsteering angle). We verified the safety of our system by comparing the\npredicted results with standard behaviors by real-world experienced drivers.\nOur test results show that the predictions can be considered as accurate in at\nlease half of the testing cases (50% 80%, depending on the model), and using\ncombined features improved the performance in most cases than using video\nframes only.",
+        "translated": ""
+    },
+    {
+        "title": "HRFNet: High-Resolution Forgery Network for Localizing Satellite Image\n  Manipulation",
+        "url": "http://arxiv.org/abs/2307.11052v1",
+        "pub_date": "2023-07-20",
+        "summary": "Existing high-resolution satellite image forgery localization methods rely on\npatch-based or downsampling-based training. Both of these training methods have\nmajor drawbacks, such as inaccurate boundaries between pristine and forged\nregions, the generation of unwanted artifacts, etc. To tackle the\naforementioned challenges, inspired by the high-resolution image segmentation\nliterature, we propose a novel model called HRFNet to enable satellite image\nforgery localization effectively. Specifically, equipped with shallow and deep\nbranches, our model can successfully integrate RGB and resampling features in\nboth global and local manners to localize forgery more accurately. We perform\nvarious experiments to demonstrate that our method achieves the best\nperformance, while the memory requirement and processing speed are not\ncompromised compared to existing methods.",
+        "translated": ""
+    },
+    {
+        "title": "Cascade-DETR: Delving into High-Quality Universal Object Detection",
+        "url": "http://arxiv.org/abs/2307.11035v1",
+        "pub_date": "2023-07-20",
+        "summary": "Object localization in general environments is a fundamental part of vision\nsystems. While dominating on the COCO benchmark, recent Transformer-based\ndetection methods are not competitive in diverse domains. Moreover, these\nmethods still struggle to very accurately estimate the object bounding boxes in\ncomplex environments.\n  We introduce Cascade-DETR for high-quality universal object detection. We\njointly tackle the generalization to diverse domains and localization accuracy\nby proposing the Cascade Attention layer, which explicitly integrates\nobject-centric information into the detection decoder by limiting the attention\nto the previous box prediction. To further enhance accuracy, we also revisit\nthe scoring of queries. Instead of relying on classification scores, we predict\nthe expected IoU of the query, leading to substantially more well-calibrated\nconfidences. Lastly, we introduce a universal object detection benchmark,\nUDB10, that contains 10 datasets from diverse domains. While also advancing the\nstate-of-the-art on COCO, Cascade-DETR substantially improves DETR-based\ndetectors on all datasets in UDB10, even by over 10 mAP in some cases. The\nimprovements under stringent quality requirements are even more pronounced. Our\ncode and models will be released at https://github.com/SysCV/cascade-detr.",
+        "translated": ""
     }
 ]
