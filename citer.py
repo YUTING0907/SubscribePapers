@@ -63,14 +63,13 @@ def fill_citation(paper_item, doi_counter):
 
 def update_results_parallel(conf, papers):
     doi_counter = CachedDOICounter()
+    for paper_item in papers:
+        print(f"---in--update_results_parallel-paper_item-:{paper_item}")
     with ThreadPoolExecutor(max_workers=5) as executor:
         future_to_paper = {
             executor.submit(fill_citation, paper_item, doi_counter): paper_item
             for paper_item in papers
         }
-        for paper_item in papers:
-            print(f"---in--update_results_parallel-paper_item-:{paper_item}")
-        
         updated_papers = []
         for future in tqdm(as_completed(future_to_paper), total=len(future_to_paper), desc=f"Updating {conf} papers"):
             paper_item = future_to_paper[future]
