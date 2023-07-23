@@ -39,6 +39,7 @@ def get_links(results, confs, filter_keywords=[], start_year=2012):
             and all(keyword not in item['href'] for keyword in filter_keywords)
             and conf + re.search(r'\d{4}', item['href']).group() not in existing_confs
         ]
+        print(f"---in--crawler--links--{links}")
         links_all.extend(links)
 
     return links_all
