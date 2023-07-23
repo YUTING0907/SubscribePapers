@@ -80,6 +80,8 @@ def update_results_parallel(conf, papers):
 
 def fetch_parallel(results, confs):
     with ThreadPoolExecutor(max_workers=1) as executor:
+        for conf in confs if conf in results:
+            print(f"---fetch_parallel--conf:{conf}---results[conf]:{results[conf]}")
         future_to_conf = {
             executor.submit(update_results_parallel, conf, results[conf]): conf
             for conf in confs if conf in results
