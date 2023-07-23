@@ -38,9 +38,9 @@ def run(confs_str, start_year, filter_str=''):
 
     start_year = int(start_year)
 
-    #crawler.run_all(confs=confs,filter_keywords=FILTERS,start_year=start_year,filename='results.json',threads=20)
+    crawler.run_all(confs=confs,filter_keywords=FILTERS,start_year=start_year,filename='results.json',threads=20)
 
-    citer.run_all(confs=[conf + str(start_year) for conf in confs],mode='parallel')
+    #citer.run_all(confs=[conf + str(start_year) for conf in confs],mode='parallel')
 
 def main():
     ###1.get issue template params
