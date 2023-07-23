@@ -38,9 +38,10 @@ def run(confs_str, start_year, filter_str=''):
 
     start_year = int(start_year)
 
+    ##dblp网站上的文章(daily推送)
     crawler.run_all(confs=confs,filter_keywords=FILTERS,start_year=start_year,filename='results.json',threads=20)
-
-    #citer.run_all(confs=[conf + str(start_year) for conf in confs],mode='parallel')
+    ##顶刊顶会
+    citer.run_all(confs=[conf + str(start_year) for conf in confs],mode='parallel')
 
 def main():
     ###1.get issue template params
