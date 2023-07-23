@@ -37,7 +37,6 @@ def run(confs_str, start_year, filter_str=''):
         confs = []
 
     start_year = int(start_year)
-
     ##dblp网站上的文章(daily推送)
     crawler.run_all(confs=confs,filter_keywords=FILTERS,start_year=start_year,filename='results.json',threads=20)
     
