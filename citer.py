@@ -47,7 +47,8 @@ def extract_doi(url):
 def fill_citation(paper_item, doi_counter):
     try:
         if paper_item['paper_cite'] in [-1, -2]:
-            print(f"---in-fill_citation--{paper_item['paper_cite']} ")
+            print(f"---in-fill_citation-:-{paper_item['paper_cite']} ")
+            print(f"---in-fill_citation-paper_item['paper_url']-:{paper_item['paper_url']} ")
             doi = extract_doi(paper_item['paper_url'])
             print(f"---in-fill_citation--{doi} ")
             paper_cite = doi_counter.get_citation(doi)
