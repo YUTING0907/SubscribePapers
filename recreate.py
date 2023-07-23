@@ -40,6 +40,7 @@ def run(confs_str, start_year, filter_str=''):
 
     ##dblp网站上的文章(daily推送)
     crawler.run_all(confs=confs,filter_keywords=FILTERS,start_year=start_year,filename='results.json',threads=20)
+    
     ##顶刊顶会
     citer.run_all(confs=[conf + str(start_year) for conf in confs],mode='parallel')
 
