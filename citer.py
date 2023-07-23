@@ -50,11 +50,8 @@ def fill_citation(paper_item, doi_counter):
             print(f"---in-fill_citation-:-{paper_item['paper_cite']} ")
             print(f"---in-fill_citation-paper_item['paper_url']-:{paper_item['paper_url']} ")
             doi = extract_doi(paper_item['paper_url'])
-            print(f"---in-fill_citation--{doi} ")
             paper_cite = doi_counter.get_citation(doi)
-            print(f"---in-fill_citation--{paper_cite} ")
             paper_item = paper_item.copy()
-            print(f"---in-fill_citation--{paper_item} ")
             paper_item['paper_cite'] = paper_cite
         return paper_item
     except Exception as e:
