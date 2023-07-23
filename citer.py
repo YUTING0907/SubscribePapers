@@ -143,6 +143,8 @@ def run_all(filename='results.json', confs=None, mode='seq'):
     if mode == 'seq':
         results = fetch(results, confs)
     else:
+        print(f"----citer.py--in--run_all--results:{results}")
+        print(f"----citer.py--in--run_all--confs:{confs}")
         results = fetch_parallel(results, confs)
     ###3.save files into results.json
     save_results(results, filename)
