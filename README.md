@@ -33,7 +33,7 @@ https://sct.ftqq.com/
 
   
 ## 二、CV顶会论文列表
-在workflows中同样增加了对于顶刊顶会论文的获取action，action会根据新建的issue触发，配置模版可参考已经closed的issue
+在workflows中同样增加了对于顶刊顶会论文的获取action-bot，action-bot会根据新建的issue触发，配置模版可参考已经closed的issue
 | CVPR                                                         | ICLR                                                         | NeurIPS                                                      | ECCV                                                         | ICCV                                                         | AAAI                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [2012](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/cvpr/cvpr2012.md) | [2012](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/iclr/iclr2012.md) | [2012](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/nips/nips2012.md) | [2012](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/eccv/eccv2012.md) | [2012](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/iccv/iccv2012.md) | [2012](https://github.com/YUTING0907/SubscribePapers/blob/main/papers/aaai/aaai2012.md) |
