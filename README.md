@@ -16,6 +16,9 @@
   
 完成配置后，将配置文件推送到代码仓库中的 .github/workflows 目录中，GitHub 将会自动运行你的工作流程。
 
+【Github Actions生成 secrets参考链接】：
+https://blog.csdn.net/weixin_45178716/article/details/106416925
+
 ### 2.彩云小译翻译摘要
 彩云小译提供翻译api
 官网链接：https://platform.caiyunapp.com/
