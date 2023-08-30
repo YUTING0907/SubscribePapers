@@ -4821,5 +4821,75 @@
         "pub_date": "2023-08-25",
         "summary": "Cross-domain few-shot segmentation (CD-FSS) aims to achieve semantic\nsegmentation in previously unseen domains with a limited number of annotated\nsamples. Although existing CD-FSS models focus on cross-domain feature\ntransformation, relying exclusively on inter-domain knowledge transfer may lead\nto the loss of critical intra-domain information. To this end, we propose a\nnovel residual transformation network (RestNet) that facilitates knowledge\ntransfer while retaining the intra-domain support-query feature information.\nSpecifically, we propose a Semantic Enhanced Anchor Transform (SEAT) module\nthat maps features to a stable domain-agnostic space using advanced semantics.\nAdditionally, an Intra-domain Residual Enhancement (IRE) module is designed to\nmaintain the intra-domain representation of the original discriminant space in\nthe new space. We also propose a mask prediction strategy based on prototype\nfusion to help the model gradually learn how to segment. Our RestNet can\ntransfer cross-domain knowledge from both inter-domain and intra-domain without\nrequiring additional fine-tuning. Extensive experiments on ISIC, Chest X-ray,\nand FSS-1000 show that our RestNet achieves state-of-the-art performance. Our\ncode will be available soon.",
         "translated": ""
+    },
+    {
+        "title": "Efficient Discovery and Effective Evaluation of Visual Perceptual\n  Similarity: A Benchmark and Beyond",
+        "url": "http://arxiv.org/abs/2308.14753v1",
+        "pub_date": "2023-08-28",
+        "summary": "Visual similarities discovery (VSD) is an important task with broad\ne-commerce applications. Given an image of a certain object, the goal of VSD is\nto retrieve images of different objects with high perceptual visual similarity.\nAlthough being a highly addressed problem, the evaluation of proposed methods\nfor VSD is often based on a proxy of an identification-retrieval task,\nevaluating the ability of a model to retrieve different images of the same\nobject. We posit that evaluating VSD methods based on identification tasks is\nlimited, and faithful evaluation must rely on expert annotations. In this\npaper, we introduce the first large-scale fashion visual similarity benchmark\ndataset, consisting of more than 110K expert-annotated image pairs. Besides\nthis major contribution, we share insight from the challenges we faced while\ncurating this dataset. Based on these insights, we propose a novel and\nefficient labeling procedure that can be applied to any dataset. Our analysis\nexamines its limitations and inductive biases, and based on these findings, we\npropose metrics to mitigate those limitations. Though our primary focus lies on\nvisual similarity, the methodologies we present have broader applications for\ndiscovering and evaluating perceptual similarity across various domains.",
+        "translated": ""
+    },
+    {
+        "title": "MagicEdit: High-Fidelity and Temporally Coherent Video Editing",
+        "url": "http://arxiv.org/abs/2308.14749v1",
+        "pub_date": "2023-08-28",
+        "summary": "In this report, we present MagicEdit, a surprisingly simple yet effective\nsolution to the text-guided video editing task. We found that high-fidelity and\ntemporally coherent video-to-video translation can be achieved by explicitly\ndisentangling the learning of content, structure and motion signals during\ntraining. This is in contradict to most existing methods which attempt to\njointly model both the appearance and temporal representation within a single\nframework, which we argue, would lead to degradation in per-frame quality.\nDespite its simplicity, we show that MagicEdit supports various downstream\nvideo editing tasks, including video stylization, local editing, video-MagicMix\nand video outpainting.",
+        "translated": ""
+    },
+    {
+        "title": "MagicAvatar: Multimodal Avatar Generation and Animation",
+        "url": "http://arxiv.org/abs/2308.14748v1",
+        "pub_date": "2023-08-28",
+        "summary": "This report presents MagicAvatar, a framework for multimodal video generation\nand animation of human avatars. Unlike most existing methods that generate\navatar-centric videos directly from multimodal inputs (e.g., text prompts),\nMagicAvatar explicitly disentangles avatar video generation into two stages:\n(1) multimodal-to-motion and (2) motion-to-video generation. The first stage\ntranslates the multimodal inputs into motion/ control signals (e.g., human\npose, depth, DensePose); while the second stage generates avatar-centric video\nguided by these motion signals. Additionally, MagicAvatar supports avatar\nanimation by simply providing a few images of the target person. This\ncapability enables the animation of the provided human identity according to\nthe specific motion derived from the first stage. We demonstrate the\nflexibility of MagicAvatar through various applications, including text-guided\nand video-guided avatar generation, as well as multimodal avatar animation.",
+        "translated": ""
+    },
+    {
+        "title": "CoVR: Learning Composed Video Retrieval from Web Video Captions",
+        "url": "http://arxiv.org/abs/2308.14746v1",
+        "pub_date": "2023-08-28",
+        "summary": "Composed Image Retrieval (CoIR) has recently gained popularity as a task that\nconsiders both text and image queries together, to search for relevant images\nin a database. Most CoIR approaches require manually annotated datasets,\ncomprising image-text-image triplets, where the text describes a modification\nfrom the query image to the target image. However, manual curation of CoIR\ntriplets is expensive and prevents scalability. In this work, we instead\npropose a scalable automatic dataset creation methodology that generates\ntriplets given video-caption pairs, while also expanding the scope of the task\nto include composed video retrieval (CoVR). To this end, we mine paired videos\nwith a similar caption from a large database, and leverage a large language\nmodel to generate the corresponding modification text. Applying this\nmethodology to the extensive WebVid2M collection, we automatically construct\nour WebVid-CoVR dataset, resulting in 1.6 million triplets. Moreover, we\nintroduce a new benchmark for CoVR with a manually annotated evaluation set,\nalong with baseline results. Our experiments further demonstrate that training\na CoVR model on our dataset effectively transfers to CoIR, leading to improved\nstate-of-the-art performance in the zero-shot setup on both the CIRR and\nFashionIQ benchmarks. Our code, datasets, and models are publicly available at\nhttps://imagine.enpc.fr/~ventural/covr.",
+        "translated": ""
+    },
+    {
+        "title": "Total Selfie: Generating Full-Body Selfies",
+        "url": "http://arxiv.org/abs/2308.14740v1",
+        "pub_date": "2023-08-28",
+        "summary": "We present a method to generate full-body selfies -- photos that you take of\nyourself, but capturing your whole body as if someone else took the photo of\nyou from a few feet away. Our approach takes as input a pre-captured video of\nyour body, a target pose photo, and a selfie + background pair for each\nlocation. We introduce a novel diffusion-based approach to combine all of this\ninformation into high quality, well-composed photos of you with the desired\npose and background.",
+        "translated": ""
+    },
+    {
+        "title": "Flexible Techniques for Differentiable Rendering with 3D Gaussians",
+        "url": "http://arxiv.org/abs/2308.14737v1",
+        "pub_date": "2023-08-28",
+        "summary": "Fast, reliable shape reconstruction is an essential ingredient in many\ncomputer vision applications. Neural Radiance Fields demonstrated that\nphotorealistic novel view synthesis is within reach, but was gated by\nperformance requirements for fast reconstruction of real scenes and objects.\nSeveral recent approaches have built on alternative shape representations, in\nparticular, 3D Gaussians. We develop extensions to these renderers, such as\nintegrating differentiable optical flow, exporting watertight meshes and\nrendering per-ray normals. Additionally, we show how two of the recent methods\nare interoperable with each other. These reconstructions are quick, robust, and\neasily performed on GPU or CPU. For code and visual examples, see\nhttps://leonidk.github.io/fmb-plus",
+        "translated": ""
+    },
+    {
+        "title": "PanoSwin: a Pano-style Swin Transformer for Panorama Understanding",
+        "url": "http://arxiv.org/abs/2308.14726v1",
+        "pub_date": "2023-08-28",
+        "summary": "In panorama understanding, the widely used equirectangular projection (ERP)\nentails boundary discontinuity and spatial distortion. It severely deteriorates\nthe conventional CNNs and vision Transformers on panoramas. In this paper, we\npropose a simple yet effective architecture named PanoSwin to learn panorama\nrepresentations with ERP. To deal with the challenges brought by\nequirectangular projection, we explore a pano-style shift windowing scheme and\nnovel pitch attention to address the boundary discontinuity and the spatial\ndistortion, respectively. Besides, based on spherical distance and Cartesian\ncoordinates, we adapt absolute positional embeddings and relative positional\nbiases for panoramas to enhance panoramic geometry information. Realizing that\nplanar image understanding might share some common knowledge with panorama\nunderstanding, we devise a novel two-stage learning framework to facilitate\nknowledge transfer from the planar images to panoramas. We conduct experiments\nagainst the state-of-the-art on various panoramic tasks, i.e., panoramic object\ndetection, panoramic classification, and panoramic layout estimation. The\nexperimental results demonstrate the effectiveness of PanoSwin in panorama\nunderstanding.",
+        "translated": ""
+    },
+    {
+        "title": "R3D3: Dense 3D Reconstruction of Dynamic Scenes from Multiple Cameras",
+        "url": "http://arxiv.org/abs/2308.14713v1",
+        "pub_date": "2023-08-28",
+        "summary": "Dense 3D reconstruction and ego-motion estimation are key challenges in\nautonomous driving and robotics. Compared to the complex, multi-modal systems\ndeployed today, multi-camera systems provide a simpler, low-cost alternative.\nHowever, camera-based 3D reconstruction of complex dynamic scenes has proven\nextremely difficult, as existing solutions often produce incomplete or\nincoherent results. We propose R3D3, a multi-camera system for dense 3D\nreconstruction and ego-motion estimation. Our approach iterates between\ngeometric estimation that exploits spatial-temporal information from multiple\ncameras, and monocular depth refinement. We integrate multi-camera feature\ncorrelation and dense bundle adjustment operators that yield robust geometric\ndepth and pose estimates. To improve reconstruction where geometric depth is\nunreliable, e.g. for moving objects or low-textured regions, we introduce\nlearnable scene priors via a depth refinement network. We show that this design\nenables a dense, consistent 3D reconstruction of challenging, dynamic outdoor\nenvironments. Consequently, we achieve state-of-the-art dense depth prediction\non the DDAD and NuScenes benchmarks.",
+        "translated": ""
+    },
+    {
+        "title": "VideoCutLER: Surprisingly Simple Unsupervised Video Instance\n  Segmentation",
+        "url": "http://arxiv.org/abs/2308.14710v1",
+        "pub_date": "2023-08-28",
+        "summary": "Existing approaches to unsupervised video instance segmentation typically\nrely on motion estimates and experience difficulties tracking small or\ndivergent motions. We present VideoCutLER, a simple method for unsupervised\nmulti-instance video segmentation without using motion-based learning signals\nlike optical flow or training on natural videos. Our key insight is that using\nhigh-quality pseudo masks and a simple video synthesis method for model\ntraining is surprisingly sufficient to enable the resulting video model to\neffectively segment and track multiple instances across video frames. We show\nthe first competitive unsupervised learning results on the challenging\nYouTubeVIS-2019 benchmark, achieving 50.7% APvideo^50 , surpassing the previous\nstate-of-the-art by a large margin. VideoCutLER can also serve as a strong\npretrained model for supervised video instance segmentation tasks, exceeding\nDINO by 15.9% on YouTubeVIS-2019 in terms of APvideo.",
+        "translated": ""
+    },
+    {
+        "title": "360-Degree Panorama Generation from Few Unregistered NFoV Images",
+        "url": "http://arxiv.org/abs/2308.14686v1",
+        "pub_date": "2023-08-28",
+        "summary": "360$^\\circ$ panoramas are extensively utilized as environmental light sources\nin computer graphics. However, capturing a 360$^\\circ$ $\\times$ 180$^\\circ$\npanorama poses challenges due to the necessity of specialized and costly\nequipment, and additional human resources. Prior studies develop various\nlearning-based generative methods to synthesize panoramas from a single Narrow\nField-of-View (NFoV) image, but they are limited in alterable input patterns,\ngeneration quality, and controllability. To address these issues, we propose a\nnovel pipeline called PanoDiff, which efficiently generates complete\n360$^\\circ$ panoramas using one or more unregistered NFoV images captured from\narbitrary angles. Our approach has two primary components to overcome the\nlimitations. Firstly, a two-stage angle prediction module to handle various\nnumbers of NFoV inputs. Secondly, a novel latent diffusion-based panorama\ngeneration model uses incomplete panorama and text prompts as control signals\nand utilizes several geometric augmentation schemes to ensure geometric\nproperties in generated panoramas. Experiments show that PanoDiff achieves\nstate-of-the-art panoramic generation quality and high controllability, making\nit suitable for applications such as content editing.",
+        "translated": ""
     }
 ]
