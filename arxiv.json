@@ -5171,5 +5171,75 @@
         "pub_date": "2023-09-01",
         "summary": "Domain adaptation (DA) aims to alleviate the domain shift between source\ndomain and target domain. Most DA methods require access to the source data,\nbut often that is not possible (e.g. due to data privacy or intellectual\nproperty). In this paper, we address the challenging source-free domain\nadaptation (SFDA) problem, where the source pretrained model is adapted to the\ntarget domain in the absence of source data. Our method is based on the\nobservation that target data, which might not align with the source domain\nclassifier, still forms clear clusters. We capture this intrinsic structure by\ndefining local affinity of the target data, and encourage label consistency\namong data with high local affinity. We observe that higher affinity should be\nassigned to reciprocal neighbors. To aggregate information with more context,\nwe consider expanded neighborhoods with small affinity values. Furthermore, we\nconsider the density around each target sample, which can alleviate the\nnegative impact of potential outliers. In the experimental results we verify\nthat the inherent structure of the target features is an important source of\ninformation for domain adaptation. We demonstrate that this local structure can\nbe efficiently captured by considering the local neighbors, the reciprocal\nneighbors, and the expanded neighborhood. Finally, we achieve state-of-the-art\nperformance on several 2D image and 3D point cloud recognition datasets.",
         "translated": ""
+    },
+    {
+        "title": "GO-SLAM: Global Optimization for Consistent 3D Instant Reconstruction",
+        "url": "http://arxiv.org/abs/2309.02436v1",
+        "pub_date": "2023-09-05",
+        "summary": "Neural implicit representations have recently demonstrated compelling results\non dense Simultaneous Localization And Mapping (SLAM) but suffer from the\naccumulation of errors in camera tracking and distortion in the reconstruction.\nPurposely, we present GO-SLAM, a deep-learning-based dense visual SLAM\nframework globally optimizing poses and 3D reconstruction in real-time. Robust\npose estimation is at its core, supported by efficient loop closing and online\nfull bundle adjustment, which optimize per frame by utilizing the learned\nglobal geometry of the complete history of input frames. Simultaneously, we\nupdate the implicit and continuous surface representation on-the-fly to ensure\nglobal consistency of 3D reconstruction. Results on various synthetic and\nreal-world datasets demonstrate that GO-SLAM outperforms state-of-the-art\napproaches at tracking robustness and reconstruction accuracy. Furthermore,\nGO-SLAM is versatile and can run with monocular, stereo, and RGB-D input.",
+        "translated": ""
+    },
+    {
+        "title": "Efficient RL via Disentangled Environment and Agent Representations",
+        "url": "http://arxiv.org/abs/2309.02435v1",
+        "pub_date": "2023-09-05",
+        "summary": "Agents that are aware of the separation between themselves and their\nenvironments can leverage this understanding to form effective representations\nof visual input. We propose an approach for learning such structured\nrepresentations for RL algorithms, using visual knowledge of the agent, such as\nits shape or mask, which is often inexpensive to obtain. This is incorporated\ninto the RL objective using a simple auxiliary loss. We show that our method,\nStructured Environment-Agent Representations, outperforms state-of-the-art\nmodel-free approaches over 18 different challenging visual simulation\nenvironments spanning 5 different robots. Website at https://sear-rl.github.io/",
+        "translated": ""
+    },
+    {
+        "title": "ReliTalk: Relightable Talking Portrait Generation from a Single Video",
+        "url": "http://arxiv.org/abs/2309.02434v1",
+        "pub_date": "2023-09-05",
+        "summary": "Recent years have witnessed great progress in creating vivid audio-driven\nportraits from monocular videos. However, how to seamlessly adapt the created\nvideo avatars to other scenarios with different backgrounds and lighting\nconditions remains unsolved. On the other hand, existing relighting studies\nmostly rely on dynamically lighted or multi-view data, which are too expensive\nfor creating video portraits. To bridge this gap, we propose ReliTalk, a novel\nframework for relightable audio-driven talking portrait generation from\nmonocular videos. Our key insight is to decompose the portrait's reflectance\nfrom implicitly learned audio-driven facial normals and images. Specifically,\nwe involve 3D facial priors derived from audio features to predict delicate\nnormal maps through implicit functions. These initially predicted normals then\ntake a crucial part in reflectance decomposition by dynamically estimating the\nlighting condition of the given video. Moreover, the stereoscopic face\nrepresentation is refined using the identity-consistent loss under simulated\nmultiple lighting conditions, addressing the ill-posed problem caused by\nlimited views available from a single monocular video. Extensive experiments\nvalidate the superiority of our proposed framework on both real and synthetic\ndatasets. Our code is released in https://github.com/arthur-qiu/ReliTalk.",
+        "translated": ""
+    },
+    {
+        "title": "Building a Winning Team: Selecting Source Model Ensembles using a\n  Submodular Transferability Estimation Approach",
+        "url": "http://arxiv.org/abs/2309.02429v1",
+        "pub_date": "2023-09-05",
+        "summary": "Estimating the transferability of publicly available pretrained models to a\ntarget task has assumed an important place for transfer learning tasks in\nrecent years. Existing efforts propose metrics that allow a user to choose one\nmodel from a pool of pre-trained models without having to fine-tune each model\nindividually and identify one explicitly. With the growth in the number of\navailable pre-trained models and the popularity of model ensembles, it also\nbecomes essential to study the transferability of multiple-source models for a\ngiven target task. The few existing efforts study transferability in such\nmulti-source ensemble settings using just the outputs of the classification\nlayer and neglect possible domain or task mismatch. Moreover, they overlook the\nmost important factor while selecting the source models, viz., the cohesiveness\nfactor between them, which can impact the performance and confidence in the\nprediction of the ensemble. To address these gaps, we propose a novel Optimal\ntranSport-based suBmOdular tRaNsferability metric (OSBORN) to estimate the\ntransferability of an ensemble of models to a downstream task. OSBORN\ncollectively accounts for image domain difference, task difference, and\ncohesiveness of models in the ensemble to provide reliable estimates of\ntransferability. We gauge the performance of OSBORN on both image\nclassification and semantic segmentation tasks. Our setup includes 28 source\ndatasets, 11 target datasets, 5 model architectures, and 2 pre-training\nmethods. We benchmark our method against current state-of-the-art metrics\nMS-LEEP and E-LEEP, and outperform them consistently using the proposed\napproach.",
+        "translated": ""
+    },
+    {
+        "title": "EgoPCA: A New Framework for Egocentric Hand-Object Interaction\n  Understanding",
+        "url": "http://arxiv.org/abs/2309.02423v1",
+        "pub_date": "2023-09-05",
+        "summary": "With the surge in attention to Egocentric Hand-Object Interaction (Ego-HOI),\nlarge-scale datasets such as Ego4D and EPIC-KITCHENS have been proposed.\nHowever, most current research is built on resources derived from third-person\nvideo action recognition. This inherent domain gap between first- and\nthird-person action videos, which have not been adequately addressed before,\nmakes current Ego-HOI suboptimal. This paper rethinks and proposes a new\nframework as an infrastructure to advance Ego-HOI recognition by Probing,\nCuration and Adaption (EgoPCA). We contribute comprehensive pre-train sets,\nbalanced test sets and a new baseline, which are complete with a\ntraining-finetuning strategy. With our new framework, we not only achieve\nstate-of-the-art performance on Ego-HOI benchmarks but also build several new\nand effective mechanisms and settings to advance further research. We believe\nour data and the findings will pave a new way for Ego-HOI understanding. Code\nand data are available at https://mvig-rhos.com/ego_pca",
+        "translated": ""
+    },
+    {
+        "title": "Doppelgangers: Learning to Disambiguate Images of Similar Structures",
+        "url": "http://arxiv.org/abs/2309.02420v1",
+        "pub_date": "2023-09-05",
+        "summary": "We consider the visual disambiguation task of determining whether a pair of\nvisually similar images depict the same or distinct 3D surfaces (e.g., the same\nor opposite sides of a symmetric building). Illusory image matches, where two\nimages observe distinct but visually similar 3D surfaces, can be challenging\nfor humans to differentiate, and can also lead 3D reconstruction algorithms to\nproduce erroneous results. We propose a learning-based approach to visual\ndisambiguation, formulating it as a binary classification task on image pairs.\nTo that end, we introduce a new dataset for this problem, Doppelgangers, which\nincludes image pairs of similar structures with ground truth labels. We also\ndesign a network architecture that takes the spatial distribution of local\nkeypoints and matches as input, allowing for better reasoning about both local\nand global cues. Our evaluation shows that our method can distinguish illusory\nmatches in difficult cases, and can be integrated into SfM pipelines to produce\ncorrect, disambiguated 3D reconstructions. See our project page for our code,\ndatasets, and more results: http://doppelgangers-3d.github.io/.",
+        "translated": ""
+    },
+    {
+        "title": "Generating Realistic Images from In-the-wild Sounds",
+        "url": "http://arxiv.org/abs/2309.02405v1",
+        "pub_date": "2023-09-05",
+        "summary": "Representing wild sounds as images is an important but challenging task due\nto the lack of paired datasets between sound and images and the significant\ndifferences in the characteristics of these two modalities. Previous studies\nhave focused on generating images from sound in limited categories or music. In\nthis paper, we propose a novel approach to generate images from in-the-wild\nsounds. First, we convert sound into text using audio captioning. Second, we\npropose audio attention and sentence attention to represent the rich\ncharacteristics of sound and visualize the sound. Lastly, we propose a direct\nsound optimization with CLIPscore and AudioCLIP and generate images with a\ndiffusion-based model. In experiments, it shows that our model is able to\ngenerate high quality images from wild sounds and outperforms baselines in both\nquantitative and qualitative evaluations on wild audio datasets.",
+        "translated": ""
+    },
+    {
+        "title": "Voice Morphing: Two Identities in One Voice",
+        "url": "http://arxiv.org/abs/2309.02404v1",
+        "pub_date": "2023-09-05",
+        "summary": "In a biometric system, each biometric sample or template is typically\nassociated with a single identity. However, recent research has demonstrated\nthe possibility of generating \"morph\" biometric samples that can successfully\nmatch more than a single identity. Morph attacks are now recognized as a\npotential security threat to biometric systems. However, most morph attacks\nhave been studied on biometric modalities operating in the image domain, such\nas face, fingerprint, and iris. In this preliminary work, we introduce Voice\nIdentity Morphing (VIM) - a voice-based morph attack that can synthesize speech\nsamples that impersonate the voice characteristics of a pair of individuals.\nOur experiments evaluate the vulnerabilities of two popular speaker recognition\nsystems, ECAPA-TDNN and x-vector, to VIM, with a success rate (MMPMR) of over\n80% at a false match rate of 1% on the Librispeech dataset.",
+        "translated": ""
+    },
+    {
+        "title": "Prototype-based Dataset Comparison",
+        "url": "http://arxiv.org/abs/2309.02401v1",
+        "pub_date": "2023-09-05",
+        "summary": "Dataset summarisation is a fruitful approach to dataset inspection. However,\nwhen applied to a single dataset the discovery of visual concepts is restricted\nto those most prominent. We argue that a comparative approach can expand upon\nthis paradigm to enable richer forms of dataset inspection that go beyond the\nmost prominent concepts. To enable dataset comparison we present a module that\nlearns concept-level prototypes across datasets. We leverage self-supervised\nlearning to discover these prototypes without supervision, and we demonstrate\nthe benefits of our approach in two case-studies. Our findings show that\ndataset comparison extends dataset inspection and we hope to encourage more\nworks in this direction. Code and usage instructions available at\nhttps://github.com/Nanne/ProtoSim",
+        "translated": ""
+    },
+    {
+        "title": "STEP -- Towards Structured Scene-Text Spotting",
+        "url": "http://arxiv.org/abs/2309.02356v1",
+        "pub_date": "2023-09-05",
+        "summary": "We introduce the structured scene-text spotting task, which requires a\nscene-text OCR system to spot text in the wild according to a query regular\nexpression. Contrary to generic scene text OCR, structured scene-text spotting\nseeks to dynamically condition both scene text detection and recognition on\nuser-provided regular expressions. To tackle this task, we propose the\nStructured TExt sPotter (STEP), a model that exploits the provided text\nstructure to guide the OCR process. STEP is able to deal with regular\nexpressions that contain spaces and it is not bound to detection at the\nword-level granularity. Our approach enables accurate zero-shot structured text\nspotting in a wide variety of real-world reading scenarios and is solely\ntrained on publicly available data. To demonstrate the effectiveness of our\napproach, we introduce a new challenging test dataset that contains several\ntypes of out-of-vocabulary structured text, reflecting important reading\napplications of fields such as prices, dates, serial numbers, license plates\netc. We demonstrate that STEP can provide specialised OCR performance on demand\nin all tested scenarios.",
+        "translated": ""
     }
 ]
