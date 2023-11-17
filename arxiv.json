@@ -8608,5 +8608,75 @@
         "pub_date": "2023-11-14",
         "summary": "Segmentation, or the outlining of objects within images, is a critical step\nin the measurement and analysis of cells within microscopy images. While\nimprovements continue to be made in tools that rely on classical methods for\nsegmentation, deep learning-based tools increasingly dominate advances in the\ntechnology. Specialist models such as Cellpose continue to improve in accuracy\nand user-friendliness, and segmentation challenges such as the Multi-Modality\nCell Segmentation Challenge continue to push innovation in accuracy across\nwidely-varying test data as well as efficiency and usability. Increased\nattention on documentation, sharing, and evaluation standards are leading to\nincreased user-friendliness and acceleration towards the goal of a truly\nuniversal method.",
         "translated": ""
+    },
+    {
+        "title": "Single-Image 3D Human Digitization with Shape-Guided Diffusion",
+        "url": "http://arxiv.org/abs/2311.09221v1",
+        "pub_date": "2023-11-15",
+        "summary": "We present an approach to generate a 360-degree view of a person with a\nconsistent, high-resolution appearance from a single input image. NeRF and its\nvariants typically require videos or images from different viewpoints. Most\nexisting approaches taking monocular input either rely on ground-truth 3D scans\nfor supervision or lack 3D consistency. While recent 3D generative models show\npromise of 3D consistent human digitization, these approaches do not generalize\nwell to diverse clothing appearances, and the results lack photorealism. Unlike\nexisting work, we utilize high-capacity 2D diffusion models pretrained for\ngeneral image synthesis tasks as an appearance prior of clothed humans. To\nachieve better 3D consistency while retaining the input identity, we\nprogressively synthesize multiple views of the human in the input image by\ninpainting missing regions with shape-guided diffusion conditioned on\nsilhouette and surface normal. We then fuse these synthesized multi-view images\nvia inverse rendering to obtain a fully textured high-resolution 3D mesh of the\ngiven person. Experiments show that our approach outperforms prior methods and\nachieves photorealistic 360-degree synthesis of a wide range of clothed humans\nwith complex textures from a single image.",
+        "translated": ""
+    },
+    {
+        "title": "DMV3D: Denoising Multi-View Diffusion using 3D Large Reconstruction\n  Model",
+        "url": "http://arxiv.org/abs/2311.09217v1",
+        "pub_date": "2023-11-15",
+        "summary": "We propose \\textbf{DMV3D}, a novel 3D generation approach that uses a\ntransformer-based 3D large reconstruction model to denoise multi-view\ndiffusion. Our reconstruction model incorporates a triplane NeRF representation\nand can denoise noisy multi-view images via NeRF reconstruction and rendering,\nachieving single-stage 3D generation in $\\sim$30s on single A100 GPU. We train\n\\textbf{DMV3D} on large-scale multi-view image datasets of highly diverse\nobjects using only image reconstruction losses, without accessing 3D assets. We\ndemonstrate state-of-the-art results for the single-image reconstruction\nproblem where probabilistic modeling of unseen object parts is required for\ngenerating diverse reconstructions with sharp textures. We also show\nhigh-quality text-to-3D generation results outperforming previous 3D diffusion\nmodels. Our project website is at: https://justimyhxu.github.io/projects/dmv3d/ .",
+        "translated": ""
+    },
+    {
+        "title": "ConvNet vs Transformer, Supervised vs CLIP: Beyond ImageNet Accuracy",
+        "url": "http://arxiv.org/abs/2311.09215v1",
+        "pub_date": "2023-11-15",
+        "summary": "Modern computer vision offers a great variety of models to practitioners, and\nselecting a model from multiple options for specific applications can be\nchallenging. Conventionally, competing model architectures and training\nprotocols are compared by their classification accuracy on ImageNet. However,\nthis single metric does not fully capture performance nuances critical for\nspecialized tasks. In this work, we conduct an in-depth comparative analysis of\nmodel behaviors beyond ImageNet accuracy, for both ConvNet and Vision\nTransformer architectures, each across supervised and CLIP training paradigms.\nAlthough our selected models have similar ImageNet accuracies and compute\nrequirements, we find that they differ in many other aspects: types of\nmistakes, output calibration, transferability, and feature invariance, among\nothers. This diversity in model characteristics, not captured by traditional\nmetrics, highlights the need for more nuanced analysis when choosing among\ndifferent models. Our code is available at\nhttps://github.com/kirill-vish/Beyond-INet.",
+        "translated": ""
+    },
+    {
+        "title": "The Role of Chain-of-Thought in Complex Vision-Language Reasoning Task",
+        "url": "http://arxiv.org/abs/2311.09193v1",
+        "pub_date": "2023-11-15",
+        "summary": "The study explores the effectiveness of the Chain-of-Thought approach, known\nfor its proficiency in language tasks by breaking them down into sub-tasks and\nintermediate steps, in improving vision-language tasks that demand\nsophisticated perception and reasoning. We present the \"Description then\nDecision\" strategy, which is inspired by how humans process signals. This\nstrategy significantly improves probing task performance by 50%, establishing\nthe groundwork for future research on reasoning paradigms in complex\nvision-language tasks.",
+        "translated": ""
+    },
+    {
+        "title": "Domain Aligned CLIP for Few-shot Classification",
+        "url": "http://arxiv.org/abs/2311.09191v1",
+        "pub_date": "2023-11-15",
+        "summary": "Large vision-language representation learning models like CLIP have\ndemonstrated impressive performance for zero-shot transfer to downstream tasks\nwhile largely benefiting from inter-modal (image-text) alignment via\ncontrastive objectives. This downstream performance can further be enhanced by\nfull-scale fine-tuning which is often compute intensive, requires large\nlabelled data, and can reduce out-of-distribution (OOD) robustness.\nFurthermore, sole reliance on inter-modal alignment might overlook the rich\ninformation embedded within each individual modality. In this work, we\nintroduce a sample-efficient domain adaptation strategy for CLIP, termed Domain\nAligned CLIP (DAC), which improves both intra-modal (image-image) and\ninter-modal alignment on target distributions without fine-tuning the main\nmodel. For intra-modal alignment, we introduce a lightweight adapter that is\nspecifically trained with an intra-modal contrastive objective. To improve\ninter-modal alignment, we introduce a simple framework to modulate the\nprecomputed class text embeddings. The proposed few-shot fine-tuning framework\nis computationally efficient, robust to distribution shifts, and does not alter\nCLIP's parameters. We study the effectiveness of DAC by benchmarking on 11\nwidely used image classification tasks with consistent improvements in 16-shot\nclassification upon strong baselines by about 2.3% and demonstrate competitive\nperformance on 4 OOD robustness benchmarks.",
+        "translated": ""
+    },
+    {
+        "title": "On the Computation of the Gaussian Rate-Distortion-Perception Function",
+        "url": "http://arxiv.org/abs/2311.09190v1",
+        "pub_date": "2023-11-15",
+        "summary": "In this paper, we study the computation of the rate-distortion-perception\nfunction (RDPF) for a multivariate Gaussian source under mean squared error\n(MSE) distortion and, respectively, Kullback-Leibler divergence, geometric\nJensen-Shannon divergence, squared Hellinger distance, and squared\nWasserstein-2 distance perception metrics. To this end, we first characterize\nthe analytical bounds of the scalar Gaussian RDPF for the aforementioned\ndivergence functions, also providing the RDPF-achieving forward \"test-channel\"\nrealization. Focusing on the multivariate case, we establish that, for\ntensorizable distortion and perception metrics, the optimal solution resides on\nthe vector space spanned by the eigenvector of the source covariance matrix.\nConsequently, the multivariate optimization problem can be expressed as a\nfunction of the scalar Gaussian RDPFs of the source marginals, constrained by\nglobal distortion and perception levels. Leveraging this characterization, we\ndesign an alternating minimization scheme based on the block nonlinear\nGauss-Seidel method, which optimally solves the problem while identifying the\nGaussian RDPF-achieving realization. Furthermore, the associated algorithmic\nembodiment is provided, as well as the convergence and the rate of convergence\ncharacterization. Lastly, for the \"perfect realism\" regime, the analytical\nsolution for the multivariate Gaussian RDPF is obtained. We corroborate our\nresults with numerical simulations and draw connections to existing results.",
+        "translated": ""
+    },
+    {
+        "title": "RBPGAN: Recurrent Back-Projection GAN for Video Super Resolution",
+        "url": "http://arxiv.org/abs/2311.09178v1",
+        "pub_date": "2023-11-15",
+        "summary": "Recently, video super resolution (VSR) has become a very impactful task in\nthe area of Computer Vision due to its various applications. In this paper, we\npropose Recurrent Back-Projection Generative Adversarial Network (RBPGAN) for\nVSR in an attempt to generate temporally coherent solutions while preserving\nspatial details. RBPGAN integrates two state-of-the-art models to get the best\nin both worlds without compromising the accuracy of produced video. The\ngenerator of the model is inspired by RBPN system, while the discriminator is\ninspired by TecoGAN. We also utilize Ping-Pong loss to increase temporal\nconsistency over time. Our contribution together results in a model that\noutperforms earlier work in terms of temporally consistent details, as we will\ndemonstrate qualitatively and quantitatively using different datasets.",
+        "translated": ""
+    },
+    {
+        "title": "WildlifeDatasets: An open-source toolkit for animal re-identification",
+        "url": "http://arxiv.org/abs/2311.09118v1",
+        "pub_date": "2023-11-15",
+        "summary": "In this paper, we present WildlifeDatasets\n(https://github.com/WildlifeDatasets/wildlife-datasets) - an open-source\ntoolkit intended primarily for ecologists and computer-vision /\nmachine-learning researchers. The WildlifeDatasets is written in Python, allows\nstraightforward access to publicly available wildlife datasets, and provides a\nwide variety of methods for dataset pre-processing, performance analysis, and\nmodel fine-tuning. We showcase the toolkit in various scenarios and baseline\nexperiments, including, to the best of our knowledge, the most comprehensive\nexperimental comparison of datasets and methods for wildlife re-identification,\nincluding both local descriptors and deep learning approaches. Furthermore, we\nprovide the first-ever foundation model for individual re-identification within\na wide range of species - MegaDescriptor - that provides state-of-the-art\nperformance on animal re-identification datasets and outperforms other\npre-trained models such as CLIP and DINOv2 by a significant margin. To make the\nmodel available to the general public and to allow easy integration with any\nexisting wildlife monitoring applications, we provide multiple MegaDescriptor\nflavors (i.e., Small, Medium, and Large) through the HuggingFace hub\n(https://huggingface.co/BVRA).",
+        "translated": ""
+    },
+    {
+        "title": "Cross-view and Cross-pose Completion for 3D Human Understanding",
+        "url": "http://arxiv.org/abs/2311.09104v1",
+        "pub_date": "2023-11-15",
+        "summary": "Human perception and understanding is a major domain of computer vision\nwhich, like many other vision subdomains recently, stands to gain from the use\nof large models pre-trained on large datasets. We hypothesize that the most\ncommon pre-training strategy of relying on general purpose, object-centric\nimage datasets such as ImageNet, is limited by an important domain shift. On\nthe other hand, collecting domain specific ground truth such as 2D or 3D labels\ndoes not scale well. Therefore, we propose a pre-training approach based on\nself-supervised learning that works on human-centric data using only images.\nOur method uses pairs of images of humans: the first is partially masked and\nthe model is trained to reconstruct the masked parts given the visible ones and\na second image. It relies on both stereoscopic (cross-view) pairs, and temporal\n(cross-pose) pairs taken from videos, in order to learn priors about 3D as well\nas human motion. We pre-train a model for body-centric tasks and one for\nhand-centric tasks. With a generic transformer architecture, these models\noutperform existing self-supervised pre-training methods on a wide set of\nhuman-centric downstream tasks, and obtain state-of-the-art performance for\ninstance when fine-tuning for model-based and model-free human mesh recovery.",
+        "translated": ""
+    },
+    {
+        "title": "Guided Scale Space Radon Transform for linear structures detection",
+        "url": "http://arxiv.org/abs/2311.09103v1",
+        "pub_date": "2023-11-15",
+        "summary": "Using integral transforms to the end of lines detection in images with\ncomplex background, makes the detection a hard task needing additional\nprocessing to manage the detection. As an integral transform, the Scale Space\nRadon Transform (SSRT) suffers from such drawbacks, even with its great\nabilities for thick lines detection. In this work, we propose a method to\naddress this issue for automatic detection of thick linear structures in gray\nscale and binary images using the SSRT, whatever the image background content.\nThis method involves the calculated Hessian orientations of the investigated\nimage while computing its SSRT, in such a way that linear structures are\nemphasized in the SSRT space. As a consequence, the subsequent maxima detection\nin the SSRT space is done on a modified transform space freed from unwanted\nparts and, consequently, from irrelevant peaks that usually drown the peaks\nrepresenting lines. Besides, highlighting the linear structure in the SSRT\nspace permitting, thus, to efficiently detect lines of different thickness in\nsynthetic and real images, the experiments show also the method robustness\nagainst noise and complex background.",
+        "translated": ""
     }
 ]
