@@ -9028,5 +9028,75 @@
         "pub_date": "2023-11-22",
         "summary": "A wide range of imaging techniques and data formats available for medical\nimages make accurate retrieval from image databases challenging.\n  Efficient retrieval systems are crucial in advancing medical research,\nenabling large-scale studies and innovative diagnostic tools. Thus, addressing\nthe challenges of medical image retrieval is essential for the continued\nenhancement of healthcare and research.\n  In this study, we evaluated the feasibility of employing four\nstate-of-the-art pretrained models for medical image retrieval at modality,\nbody region, and organ levels and compared the results of two similarity\nindexing approaches. Since the employed networks take 2D images, we analyzed\nthe impacts of weighting and sampling strategies to incorporate 3D information\nduring retrieval of 3D volumes. We showed that medical image retrieval is\nfeasible using pretrained networks without any additional training or\nfine-tuning steps. Using pretrained embeddings, we achieved a recall of 1 for\nvarious tasks at modality, body region, and organ level.",
         "translated": ""
+    },
+    {
+        "title": "SEGIC: Unleashing the Emergent Correspondence for In-Context\n  Segmentation",
+        "url": "http://arxiv.org/abs/2311.14671v1",
+        "pub_date": "2023-11-24",
+        "summary": "In-context segmentation aims at segmenting novel images using a few labeled\nexample images, termed as \"in-context examples\", exploring content similarities\nbetween examples and the target. The resulting models can be generalized\nseamlessly to novel segmentation tasks, significantly reducing the labeling and\ntraining costs compared with conventional pipelines. However, in-context\nsegmentation is more challenging than classic ones due to its meta-learning\nnature, requiring the model to learn segmentation rules conditioned on a few\nsamples, not just the segmentation. Unlike previous work with ad-hoc or\nnon-end-to-end designs, we propose SEGIC, an end-to-end segment-in-context\nframework built upon a single vision foundation model (VFM). In particular,\nSEGIC leverages the emergent correspondence within VFM to capture dense\nrelationships between target images and in-context samples. As such,\ninformation from in-context samples is then extracted into three types of\ninstructions, i.e. geometric, visual, and meta instructions, serving as\nexplicit conditions for the final mask prediction. SEGIC is a straightforward\nyet effective approach that yields state-of-the-art performance on one-shot\nsegmentation benchmarks. Notably, SEGIC can be easily generalized to diverse\ntasks, including video object segmentation and open-vocabulary segmentation.\nCode will be available at \\url{https://github.com/MengLcool/SEGIC}.",
+        "translated": ""
+    },
+    {
+        "title": "Understanding Self-Supervised Features for Learning Unsupervised\n  Instance Segmentation",
+        "url": "http://arxiv.org/abs/2311.14665v1",
+        "pub_date": "2023-11-24",
+        "summary": "Self-supervised learning (SSL) can be used to solve complex visual tasks\nwithout human labels. Self-supervised representations encode useful semantic\ninformation about images, and as a result, they have already been used for\ntasks such as unsupervised semantic segmentation. In this paper, we investigate\nself-supervised representations for instance segmentation without any manual\nannotations. We find that the features of different SSL methods vary in their\nlevel of instance-awareness. In particular, DINO features, which are known to\nbe excellent semantic descriptors, lack behind MAE features in their\nsensitivity for separating instances.",
+        "translated": ""
+    },
+    {
+        "title": "Charting New Territories: Exploring the Geographic and Geospatial\n  Capabilities of Multimodal LLMs",
+        "url": "http://arxiv.org/abs/2311.14656v1",
+        "pub_date": "2023-11-24",
+        "summary": "Multimodal large language models (MLLMs) have shown remarkable capabilities\nacross a broad range of tasks but their knowledge and abilities in the\ngeographic and geospatial domains are yet to be explored, despite potential\nwide-ranging benefits to navigation, environmental research, urban development,\nand disaster response. We conduct a series of experiments exploring various\nvision capabilities of MLLMs within these domains, particularly focusing on the\nfrontier model GPT-4V, and benchmark its performance against open-source\ncounterparts. Our methodology involves challenging these models with a\nsmall-scale geographic benchmark consisting of a suite of visual tasks, testing\ntheir abilities across a spectrum of complexity. The analysis uncovers not only\nwhere such models excel, including instances where they outperform humans, but\nalso where they falter, providing a balanced view of their capabilities in the\ngeographic domain. To enable the comparison and evaluation of future models,\nour benchmark will be publicly released.",
+        "translated": ""
+    },
+    {
+        "title": "Continuous football player tracking from discrete broadcast data",
+        "url": "http://arxiv.org/abs/2311.14642v1",
+        "pub_date": "2023-11-24",
+        "summary": "Player tracking data remains out of reach for many professional football\nteams as their video feeds are not sufficiently high quality for computer\nvision technologies to be used. To help bridge this gap, we present a method\nthat can estimate continuous full-pitch tracking data from discrete data made\nfrom broadcast footage. Such data could be collected by clubs or players at a\nsimilar cost to event data, which is widely available down to semi-professional\nlevel. We test our method using open-source tracking data, and include a\nversion that can be applied to a large set of over 200 games with such discrete\ndata.",
+        "translated": ""
+    },
+    {
+        "title": "Unsupervised high-throughput segmentation of cells and cell nuclei in\n  quantitative phase images",
+        "url": "http://arxiv.org/abs/2311.14639v1",
+        "pub_date": "2023-11-24",
+        "summary": "In the effort to aid cytologic diagnostics by establishing automatic single\ncell screening using high throughput digital holographic microscopy for\nclinical studies thousands of images and millions of cells are captured. The\nbottleneck lies in an automatic, fast, and unsupervised segmentation technique\nthat does not limit the types of cells which might occur. We propose an\nunsupervised multistage method that segments correctly without confusing noise\nor reflections with cells and without missing cells that also includes the\ndetection of relevant inner structures, especially the cell nucleus in the\nunstained cell. In an effort to make the information reasonable and\ninterpretable for cytopathologists, we also introduce new cytoplasmic and\nnuclear features of potential help for cytologic diagnoses which exploit the\nquantitative phase information inherent to the measurement scheme. We show that\nthe segmentation provides consistently good results over many experiments on\npatient samples in a reasonable per cell analysis time.",
+        "translated": ""
+    },
+    {
+        "title": "Automated Detection and Counting of Windows using UAV Imagery based\n  Remote Sensing",
+        "url": "http://arxiv.org/abs/2311.14635v1",
+        "pub_date": "2023-11-24",
+        "summary": "Despite the technological advancements in the construction and surveying\nsector, the inspection of salient features like windows in an\nunder-construction or existing building is predominantly a manual process.\nMoreover, the number of windows present in a building is directly related to\nthe magnitude of deformation it suffers under earthquakes. In this research, a\nmethod to accurately detect and count the number of windows of a building by\ndeploying an Unmanned Aerial Vehicle (UAV) based remote sensing system is\nproposed. The proposed two-stage method automates the identification and\ncounting of windows by developing computer vision pipelines that utilize data\nfrom UAV's onboard camera and other sensors. Quantitative and Qualitative\nresults show the effectiveness of our proposed approach in accurately detecting\nand counting the windows compared to the existing method.",
+        "translated": ""
+    },
+    {
+        "title": "One Strike, You're Out: Detecting Markush Structures in Low\n  Signal-to-Noise Ratio Images",
+        "url": "http://arxiv.org/abs/2311.14633v1",
+        "pub_date": "2023-11-24",
+        "summary": "Modern research increasingly relies on automated methods to assist\nresearchers. An example of this is Optical Chemical Structure Recognition\n(OCSR), which aids chemists in retrieving information about chemicals from\nlarge amounts of documents. Markush structures are chemical structures that\ncannot be parsed correctly by OCSR and cause errors. The focus of this research\nwas to propose and test a novel method for classifying Markush structures.\nWithin this method, a comparison was made between fixed-feature extraction and\nend-to-end learning (CNN). The end-to-end method performed significantly better\nthan the fixed-feature method, achieving 0.928 (0.035 SD) Macro F1 compared to\nthe fixed-feature method's 0.701 (0.052 SD). Because of the nature of the\nexperiment, these figures are a lower bound and can be improved further. These\nresults suggest that Markush structures can be filtered out effectively and\naccurately using the proposed method. When implemented into OCSR pipelines,\nthis method can improve their performance and use to other researchers.",
+        "translated": ""
+    },
+    {
+        "title": "CatVersion: Concatenating Embeddings for Diffusion-Based Text-to-Image\n  Personalization",
+        "url": "http://arxiv.org/abs/2311.14631v1",
+        "pub_date": "2023-11-24",
+        "summary": "We propose CatVersion, an inversion-based method that learns the personalized\nconcept through a handful of examples. Subsequently, users can utilize text\nprompts to generate images that embody the personalized concept, thereby\nachieving text-to-image personalization. In contrast to existing approaches\nthat emphasize word embedding learning or parameter fine-tuning for the\ndiffusion model, which potentially causes concept dilution or overfitting, our\nmethod concatenates embeddings on the feature-dense space of the text encoder\nin the diffusion model to learn the gap between the personalized concept and\nits base class, aiming to maximize the preservation of prior knowledge in\ndiffusion models while restoring the personalized concepts. To this end, we\nfirst dissect the text encoder's integration in the image generation process to\nidentify the feature-dense space of the encoder. Afterward, we concatenate\nembeddings on the Keys and Values in this space to learn the gap between the\npersonalized concept and its base class. In this way, the concatenated\nembeddings ultimately manifest as a residual on the original attention output.\nTo more accurately and unbiasedly quantify the results of personalized image\ngeneration, we improve the CLIP image alignment score based on masks.\nQualitatively and quantitatively, CatVersion helps to restore personalization\nconcepts more faithfully and enables more robust editing.",
+        "translated": ""
+    },
+    {
+        "title": "ARIA: On the interaction between Architectures, Aggregation methods and\n  Initializations in federated visual classification",
+        "url": "http://arxiv.org/abs/2311.14625v1",
+        "pub_date": "2023-11-24",
+        "summary": "Federated Learning (FL) is a collaborative training paradigm that allows for\nprivacy-preserving learning of cross-institutional models by eliminating the\nexchange of sensitive data and instead relying on the exchange of model\nparameters between the clients and a server. Despite individual studies on how\nclient models are aggregated, and, more recently, on the benefits of ImageNet\npre-training, there is a lack of understanding of the effect the architecture\nchosen for the federation has, and of how the aforementioned elements\ninterconnect. To this end, we conduct the first joint\nARchitecture-Initialization-Aggregation study and benchmark ARIAs across a\nrange of medical image classification tasks. We find that, contrary to current\npractices, ARIA elements have to be chosen together to achieve the best\npossible performance. Our results also shed light on good choices for each\nelement depending on the task, the effect of normalisation layers, and the\nutility of SSL pre-training, pointing to potential directions for designing\nFL-specific architectures and training pipelines.",
+        "translated": ""
+    },
+    {
+        "title": "Neural Style Transfer for Computer Games",
+        "url": "http://arxiv.org/abs/2311.14617v1",
+        "pub_date": "2023-11-24",
+        "summary": "Neural Style Transfer (NST) research has been applied to images, videos, 3D\nmeshes and radiance fields, but its application to 3D computer games remains\nrelatively unexplored. Whilst image and video NST systems can be used as a\npost-processing effect for a computer game, this results in undesired artefacts\nand diminished post-processing effects. Here, we present an approach for\ninjecting depth-aware NST as part of the 3D rendering pipeline. Qualitative and\nquantitative experiments are used to validate our in-game stylisation\nframework. We demonstrate temporally consistent results of artistically\nstylised game scenes, outperforming state-of-the-art image and video NST\nmethods.",
+        "translated": ""
     }
 ]
