@@ -11975,5 +11975,75 @@
         "pub_date": "2024-02-01",
         "summary": "3D Gaussian Splatting has garnered extensive attention and application in\nreal-time neural rendering. Concurrently, concerns have been raised about the\nlimitations of this technology in aspects such as point cloud storage,\nperformance , and robustness in sparse viewpoints , leading to various\nimprovements. However, there has been a notable lack of attention to the\nprojection errors introduced by the local affine approximation inherent in the\nsplatting itself, and the consequential impact of these errors on the quality\nof photo-realistic rendering. This paper addresses the projection error\nfunction of 3D Gaussian Splatting, commencing with the residual error from the\nfirst-order Taylor expansion of the projection function $\\phi$. The analysis\nestablishes a correlation between the error and the Gaussian mean position.\nSubsequently, leveraging function optimization theory, this paper analyzes the\nfunction's minima to provide an optimal projection strategy for Gaussian\nSplatting referred to Optimal Gaussian Splatting. Experimental validation\nfurther confirms that this projection methodology reduces artifacts, resulting\nin a more convincingly realistic rendering.",
         "translated": ""
+    },
+    {
+        "title": "Immersive Video Compression using Implicit Neural Representations",
+        "url": "http://arxiv.org/abs/2402.01596v1",
+        "pub_date": "2024-02-02",
+        "summary": "Recent work on implicit neural representations (INRs) has evidenced their\npotential for efficiently representing and encoding conventional video content.\nIn this paper we, for the first time, extend their application to immersive\n(multi-view) videos, by proposing MV-HiNeRV, a new INR-based immersive video\ncodec. MV-HiNeRV is an enhanced version of a state-of-the-art INR-based video\ncodec, HiNeRV, which was developed for single-view video compression. We have\nmodified the model to learn a different group of feature grids for each view,\nand share the learnt network parameters among all views. This enables the model\nto effectively exploit the spatio-temporal and the inter-view redundancy that\nexists within multi-view videos. The proposed codec was used to compress\nmulti-view texture and depth video sequences in the MPEG Immersive Video (MIV)\nCommon Test Conditions, and tested against the MIV Test model (TMIV) that uses\nthe VVenC video codec. The results demonstrate the superior performance of\nMV-HiNeRV, with significant coding gains (up to 72.33%) over TMIV. The\nimplementation of MV-HiNeRV will be published for further development and\nevaluation.",
+        "translated": ""
+    },
+    {
+        "title": "NeuroCine: Decoding Vivid Video Sequences from Human Brain Activties",
+        "url": "http://arxiv.org/abs/2402.01590v1",
+        "pub_date": "2024-02-02",
+        "summary": "In the pursuit to understand the intricacies of human brain's visual\nprocessing, reconstructing dynamic visual experiences from brain activities\nemerges as a challenging yet fascinating endeavor. While recent advancements\nhave achieved success in reconstructing static images from non-invasive brain\nrecordings, the domain of translating continuous brain activities into video\nformat remains underexplored. In this work, we introduce NeuroCine, a novel\ndual-phase framework to targeting the inherent challenges of decoding fMRI\ndata, such as noises, spatial redundancy and temporal lags. This framework\nproposes spatial masking and temporal interpolation-based augmentation for\ncontrastive learning fMRI representations and a diffusion model enhanced by\ndependent prior noise for video generation. Tested on a publicly available fMRI\ndataset, our method shows promising results, outperforming the previous\nstate-of-the-art models by a notable margin of ${20.97\\%}$, ${31.00\\%}$ and\n${12.30\\%}$ respectively on decoding the brain activities of three subjects in\nthe fMRI dataset, as measured by SSIM. Additionally, our attention analysis\nsuggests that the model aligns with existing brain structures and functions,\nindicating its biological plausibility and interpretability.",
+        "translated": ""
+    },
+    {
+        "title": "Boximator: Generating Rich and Controllable Motions for Video Synthesis",
+        "url": "http://arxiv.org/abs/2402.01566v1",
+        "pub_date": "2024-02-02",
+        "summary": "Generating rich and controllable motion is a pivotal challenge in video\nsynthesis. We propose Boximator, a new approach for fine-grained motion\ncontrol. Boximator introduces two constraint types: hard box and soft box.\nUsers select objects in the conditional frame using hard boxes and then use\neither type of boxes to roughly or rigorously define the object's position,\nshape, or motion path in future frames. Boximator functions as a plug-in for\nexisting video diffusion models. Its training process preserves the base\nmodel's knowledge by freezing the original weights and training only the\ncontrol module. To address training challenges, we introduce a novel\nself-tracking technique that greatly simplifies the learning of box-object\ncorrelations. Empirically, Boximator achieves state-of-the-art video quality\n(FVD) scores, improving on two base models, and further enhanced after\nincorporating box constraints. Its robust motion controllability is validated\nby drastic increases in the bounding box alignment metric. Human evaluation\nalso shows that users favor Boximator generation results over the base model.",
+        "translated": ""
+    },
+    {
+        "title": "Deep Continuous Networks",
+        "url": "http://arxiv.org/abs/2402.01557v1",
+        "pub_date": "2024-02-02",
+        "summary": "CNNs and computational models of biological vision share some fundamental\nprinciples, which opened new avenues of research. However, fruitful cross-field\nresearch is hampered by conventional CNN architectures being based on spatially\nand depthwise discrete representations, which cannot accommodate certain\naspects of biological complexity such as continuously varying receptive field\nsizes and dynamics of neuronal responses. Here we propose deep continuous\nnetworks (DCNs), which combine spatially continuous filters, with the\ncontinuous depth framework of neural ODEs. This allows us to learn the spatial\nsupport of the filters during training, as well as model the continuous\nevolution of feature maps, linking DCNs closely to biological models. We show\nthat DCNs are versatile and highly applicable to standard image classification\nand reconstruction problems, where they improve parameter and data efficiency,\nand allow for meta-parametrization. We illustrate the biological plausibility\nof the scale distributions learned by DCNs and explore their performance in a\nneuroscientifically inspired pattern completion task. Finally, we investigate\nan efficient implementation of DCNs by changing input contrast.",
+        "translated": ""
+    },
+    {
+        "title": "SLYKLatent, a Learning Framework for Facial Features Estimation",
+        "url": "http://arxiv.org/abs/2402.01555v1",
+        "pub_date": "2024-02-02",
+        "summary": "In this research, we present SLYKLatent, a novel approach for enhancing gaze\nestimation by addressing appearance instability challenges in datasets due to\naleatoric uncertainties, covariant shifts, and test domain generalization.\nSLYKLatent utilizes Self-Supervised Learning for initial training with facial\nexpression datasets, followed by refinement with a patch-based tri-branch\nnetwork and an inverse explained variance-weighted training loss function. Our\nevaluation on benchmark datasets achieves an 8.7% improvement on Gaze360,\nrivals top MPIIFaceGaze results, and leads on a subset of ETH-XGaze by 13%,\nsurpassing existing methods by significant margins. Adaptability tests on\nRAF-DB and Affectnet show 86.4% and 60.9% accuracies, respectively. Ablation\nstudies confirm the effectiveness of SLYKLatent's novel components. This\napproach has strong potential in human-robot interaction.",
+        "translated": ""
+    },
+    {
+        "title": "Closing the Gap in Human Behavior Analysis: A Pipeline for Synthesizing\n  Trimodal Data",
+        "url": "http://arxiv.org/abs/2402.01537v1",
+        "pub_date": "2024-02-02",
+        "summary": "In pervasive machine learning, especially in Human Behavior Analysis (HBA),\nRGB has been the primary modality due to its accessibility and richness of\ninformation. However, linked with its benefits are challenges, including\nsensitivity to lighting conditions and privacy concerns. One possibility to\novercome these vulnerabilities is to resort to different modalities. For\ninstance, thermal is particularly adept at accentuating human forms, while\ndepth adds crucial contextual layers. Despite their known benefits, only a few\nHBA-specific datasets that integrate these modalities exist. To address this\nshortage, our research introduces a novel generative technique for creating\ntrimodal, i.e., RGB, thermal, and depth, human-focused datasets. This technique\ncapitalizes on human segmentation masks derived from RGB images, combined with\nthermal and depth backgrounds that are sourced automatically. With these two\ningredients, we synthesize depth and thermal counterparts from existing RGB\ndata utilizing conditional image-to-image translation. By employing this\napproach, we generate trimodal data that can be leveraged to train models for\nsettings with limited data, bad lightning conditions, or privacy-sensitive\nareas.",
+        "translated": ""
+    },
+    {
+        "title": "HyperPlanes: Hypernetwork Approach to Rapid NeRF Adaptation",
+        "url": "http://arxiv.org/abs/2402.01524v1",
+        "pub_date": "2024-02-02",
+        "summary": "Neural radiance fields (NeRFs) are a widely accepted standard for\nsynthesizing new 3D object views from a small number of base images. However,\nNeRFs have limited generalization properties, which means that we need to use\nsignificant computational resources to train individual architectures for each\nitem we want to represent. To address this issue, we propose a few-shot\nlearning approach based on the hypernetwork paradigm that does not require\ngradient optimization during inference. The hypernetwork gathers information\nfrom the training data and generates an update for universal weights. As a\nresult, we have developed an efficient method for generating a high-quality 3D\nobject representation from a small number of images in a single step. This has\nbeen confirmed by direct comparison with the state-of-the-art solutions and a\ncomprehensive ablation study.",
+        "translated": ""
+    },
+    {
+        "title": "Cross-view Masked Diffusion Transformers for Person Image Synthesis",
+        "url": "http://arxiv.org/abs/2402.01516v1",
+        "pub_date": "2024-02-02",
+        "summary": "We present X-MDPT (Cross-view Masked Diffusion Prediction Transformers), a\nnovel diffusion model designed for pose-guided human image generation. X-MDPT\ndistinguishes itself by employing masked diffusion transformers that operate on\nlatent patches, a departure from the commonly-used Unet structures in existing\nworks. The model comprises three key modules: 1) a denoising diffusion\nTransformer, 2) an aggregation network that consolidates conditions into a\nsingle vector for the diffusion process, and 3) a mask cross-prediction module\nthat enhances representation learning with semantic information from the\nreference image. X-MDPT demonstrates scalability, improving FID, SSIM, and\nLPIPS with larger models. Despite its simple design, our model outperforms\nstate-of-the-art approaches on the DeepFashion dataset while exhibiting\nefficiency in terms of training parameters, training time, and inference speed.\nOur compact 33MB model achieves an FID of 7.42, surpassing a prior Unet latent\ndiffusion approach (FID 8.07) using only $11\\times$ fewer parameters. Our best\nmodel surpasses the pixel-based diffusion with $\\frac{2}{3}$ of the parameters\nand achieves $5.43 \\times$ faster inference.",
+        "translated": ""
+    },
+    {
+        "title": "Advancing Brain Tumor Inpainting with Generative Models",
+        "url": "http://arxiv.org/abs/2402.01509v1",
+        "pub_date": "2024-02-02",
+        "summary": "Synthesizing healthy brain scans from diseased brain scans offers a potential\nsolution to address the limitations of general-purpose algorithms, such as\ntissue segmentation and brain extraction algorithms, which may not effectively\nhandle diseased images. We consider this a 3D inpainting task and investigate\nthe adaptation of 2D inpainting methods to meet the requirements of 3D magnetic\nresonance imaging(MRI) data. Our contributions encompass potential\nmodifications tailored to MRI-specific needs, and we conducted evaluations of\nmultiple inpainting techniques using the BraTS2023 Inpainting datasets to\nassess their efficacy and limitations.",
+        "translated": ""
+    },
+    {
+        "title": "Self-Attention through Kernel-Eigen Pair Sparse Variational Gaussian\n  Processes",
+        "url": "http://arxiv.org/abs/2402.01476v1",
+        "pub_date": "2024-02-02",
+        "summary": "While the great capability of Transformers significantly boosts prediction\naccuracy, it could also yield overconfident predictions and require calibrated\nuncertainty estimation, which can be commonly tackled by Gaussian processes\n(GPs). Existing works apply GPs with symmetric kernels under variational\ninference to the attention kernel; however, omitting the fact that attention\nkernels are in essence asymmetric. Moreover, the complexity of deriving the GP\nposteriors remains high for large-scale data. In this work, we propose\nKernel-Eigen Pair Sparse Variational Gaussian Processes (KEP-SVGP) for building\nuncertainty-aware self-attention where the asymmetry of attention kernels is\ntackled by Kernel SVD (KSVD) and a reduced complexity is acquired. Through\nKEP-SVGP, i) the SVGP pair induced by the two sets of singular vectors from\nKSVD w.r.t. the attention kernel fully characterizes the asymmetry; ii) using\nonly a small set of adjoint eigenfunctions from KSVD, the derivation of SVGP\nposteriors can be based on the inversion of a diagonal matrix containing\nsingular values, contributing to a reduction in time complexity; iii) an\nevidence lower bound is derived so that variational parameters can be optimized\ntowards this objective. Experiments verify our excellent performances and\nefficiency on in-distribution, distribution-shift and out-of-distribution\nbenchmarks.",
+        "translated": ""
     }
 ]
