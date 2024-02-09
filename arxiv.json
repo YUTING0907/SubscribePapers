@@ -12185,5 +12185,75 @@
         "pub_date": "2024-02-06",
         "summary": "In this paper, we introduce the Volumetric Relightable Morphable Model\n(VRMM), a novel volumetric and parametric facial prior for 3D face modeling.\nWhile recent volumetric prior models offer improvements over traditional\nmethods like 3D Morphable Models (3DMMs), they face challenges in model\nlearning and personalized reconstructions. Our VRMM overcomes these by\nemploying a novel training framework that efficiently disentangles and encodes\nlatent spaces of identity, expression, and lighting into low-dimensional\nrepresentations. This framework, designed with self-supervised learning,\nsignificantly reduces the constraints for training data, making it more\nfeasible in practice. The learned VRMM offers relighting capabilities and\nencompasses a comprehensive range of expressions. We demonstrate the\nversatility and effectiveness of VRMM through various applications like avatar\ngeneration, facial reconstruction, and animation. Additionally, we address the\ncommon issue of overfitting in generative volumetric models with a novel\nprior-preserving personalization framework based on VRMM. Such an approach\nenables accurate 3D face reconstruction from even a single portrait input. Our\nexperiments showcase the potential of VRMM to significantly enhance the field\nof 3D face modeling.",
         "translated": ""
+    },
+    {
+        "title": "Image captioning for Brazilian Portuguese using GRIT model",
+        "url": "http://arxiv.org/abs/2402.05106v1",
+        "pub_date": "2024-02-07",
+        "summary": "This work presents the early development of a model of image captioning for\nthe Brazilian Portuguese language. We used the GRIT (Grid - and Region-based\nImage captioning Transformer) model to accomplish this work. GRIT is a\nTransformer-only neural architecture that effectively utilizes two visual\nfeatures to generate better captions. The GRIT method emerged as a proposal to\nbe a more efficient way to generate image captioning. In this work, we adapt\nthe GRIT model to be trained in a Brazilian Portuguese dataset to have an image\ncaptioning method for the Brazilian Portuguese Language.",
+        "translated": ""
+    },
+    {
+        "title": "Language-Based Augmentation to Address Shortcut Learning in Object Goal\n  Navigation",
+        "url": "http://arxiv.org/abs/2402.05090v1",
+        "pub_date": "2024-02-07",
+        "summary": "Deep Reinforcement Learning (DRL) has shown great potential in enabling\nrobots to find certain objects (e.g., `find a fridge') in environments like\nhomes or schools. This task is known as Object-Goal Navigation (ObjectNav). DRL\nmethods are predominantly trained and evaluated using environment simulators.\nAlthough DRL has shown impressive results, the simulators may be biased or\nlimited. This creates a risk of shortcut learning, i.e., learning a policy\ntailored to specific visual details of training environments. We aim to deepen\nour understanding of shortcut learning in ObjectNav, its implications and\npropose a solution. We design an experiment for inserting a shortcut bias in\nthe appearance of training environments. As a proof-of-concept, we associate\nroom types to specific wall colors (e.g., bedrooms with green walls), and\nobserve poor generalization of a state-of-the-art (SOTA) ObjectNav method to\nenvironments where this is not the case (e.g., bedrooms with blue walls). We\nfind that shortcut learning is the root cause: the agent learns to navigate to\ntarget objects, by simply searching for the associated wall color of the target\nobject's room. To solve this, we propose Language-Based (L-B) augmentation. Our\nkey insight is that we can leverage the multimodal feature space of a\nVision-Language Model (VLM) to augment visual representations directly at the\nfeature-level, requiring no changes to the simulator, and only an addition of\none layer to the model. Where the SOTA ObjectNav method's success rate drops\n69%, our proposal has only a drop of 23%.",
+        "translated": ""
+    },
+    {
+        "title": "Mamba-UNet: UNet-Like Pure Visual Mamba for Medical Image Segmentation",
+        "url": "http://arxiv.org/abs/2402.05079v1",
+        "pub_date": "2024-02-07",
+        "summary": "In recent advancements in medical image analysis, Convolutional Neural\nNetworks (CNN) and Vision Transformers (ViT) have set significant benchmarks.\nWhile the former excels in capturing local features through its convolution\noperations, the latter achieves remarkable global context understanding by\nleveraging self-attention mechanisms. However, both architectures exhibit\nlimitations in efficiently modeling long-range dependencies within medical\nimages, which is a critical aspect for precise segmentation. Inspired by the\nMamba architecture, known for its proficiency in handling long sequences and\nglobal contextual information with enhanced computational efficiency as a State\nSpace Model (SSM), we propose Mamba-UNet, a novel architecture that synergizes\nthe U-Net in medical image segmentation with Mamba's capability. Mamba-UNet\nadopts a pure Visual Mamba (VMamba)-based encoder-decoder structure, infused\nwith skip connections to preserve spatial information across different scales\nof the network. This design facilitates a comprehensive feature learning\nprocess, capturing intricate details and broader semantic contexts within\nmedical images. We introduce a novel integration mechanism within the VMamba\nblocks to ensure seamless connectivity and information flow between the encoder\nand decoder paths, enhancing the segmentation performance. We conducted\nexperiments on publicly available MRI cardiac multi-structures segmentation\ndataset. The results show that Mamba-UNet outperforms UNet, Swin-UNet in\nmedical image segmentation under the same hyper-parameter setting. The source\ncode and baseline implementations are available.",
+        "translated": ""
+    },
+    {
+        "title": "LGM: Large Multi-View Gaussian Model for High-Resolution 3D Content\n  Creation",
+        "url": "http://arxiv.org/abs/2402.05054v1",
+        "pub_date": "2024-02-07",
+        "summary": "3D content creation has achieved significant progress in terms of both\nquality and speed. Although current feed-forward models can produce 3D objects\nin seconds, their resolution is constrained by the intensive computation\nrequired during training. In this paper, we introduce Large Multi-View Gaussian\nModel (LGM), a novel framework designed to generate high-resolution 3D models\nfrom text prompts or single-view images. Our key insights are two-fold: 1) 3D\nRepresentation: We propose multi-view Gaussian features as an efficient yet\npowerful representation, which can then be fused together for differentiable\nrendering. 2) 3D Backbone: We present an asymmetric U-Net as a high-throughput\nbackbone operating on multi-view images, which can be produced from text or\nsingle-view image input by leveraging multi-view diffusion models. Extensive\nexperiments demonstrate the high fidelity and efficiency of our approach.\nNotably, we maintain the fast speed to generate 3D objects within 5 seconds\nwhile boosting the training resolution to 512, thereby achieving\nhigh-resolution 3D content generation.",
+        "translated": ""
+    },
+    {
+        "title": "Efficient Multi-Resolution Fusion for Remote Sensing Data with Label\n  Uncertainty",
+        "url": "http://arxiv.org/abs/2402.05045v1",
+        "pub_date": "2024-02-07",
+        "summary": "Multi-modal sensor data fusion takes advantage of complementary or\nreinforcing information from each sensor and can boost overall performance in\napplications such as scene classification and target detection. This paper\npresents a new method for fusing multi-modal and multi-resolution remote sensor\ndata without requiring pixel-level training labels, which can be difficult to\nobtain. Previously, we developed a Multiple Instance Multi-Resolution Fusion\n(MIMRF) framework that addresses label uncertainty for fusion, but it can be\nslow to train due to the large search space for the fuzzy measures used to\nintegrate sensor data sources. We propose a new method based on binary fuzzy\nmeasures, which reduces the search space and significantly improves the\nefficiency of the MIMRF framework. We present experimental results on synthetic\ndata and a real-world remote sensing detection task and show that the proposed\nMIMRF-BFM algorithm can effectively and efficiently perform multi-resolution\nfusion given remote sensing data with uncertainty.",
+        "translated": ""
+    },
+    {
+        "title": "A Survey on Domain Generalization for Medical Image Analysis",
+        "url": "http://arxiv.org/abs/2402.05035v1",
+        "pub_date": "2024-02-07",
+        "summary": "Medical Image Analysis (MedIA) has emerged as a crucial tool in\ncomputer-aided diagnosis systems, particularly with the advancement of deep\nlearning (DL) in recent years. However, well-trained deep models often\nexperience significant performance degradation when deployed in different\nmedical sites, modalities, and sequences, known as a domain shift issue. In\nlight of this, Domain Generalization (DG) for MedIA aims to address the domain\nshift challenge by generalizing effectively and performing robustly across\nunknown data distributions. This paper presents the a comprehensive review of\nsubstantial developments in this area. First, we provide a formal definition of\ndomain shift and domain generalization in medical field, and discuss several\nrelated settings. Subsequently, we summarize the recent methods from three\nviewpoints: data manipulation level, feature representation level, and model\ntraining level, and present some algorithms in detail for each viewpoints.\nFurthermore, we introduce the commonly used datasets. Finally, we summarize\nexisting literature and present some potential research topics for the future.\nFor this survey, we also created a GitHub project by collecting the supporting\nresources, at the link: https://github.com/Ziwei-Niu/DG_for_MedIA",
+        "translated": ""
+    },
+    {
+        "title": "EfficientViT-SAM: Accelerated Segment Anything Model Without Performance\n  Loss",
+        "url": "http://arxiv.org/abs/2402.05008v1",
+        "pub_date": "2024-02-07",
+        "summary": "We present EfficientViT-SAM, a new family of accelerated segment anything\nmodels. We retain SAM's lightweight prompt encoder and mask decoder while\nreplacing the heavy image encoder with EfficientViT. For the training, we begin\nwith the knowledge distillation from the SAM-ViT-H image encoder to\nEfficientViT. Subsequently, we conduct end-to-end training on the SA-1B\ndataset. Benefiting from EfficientViT's efficiency and capacity,\nEfficientViT-SAM delivers 48.9x measured TensorRT speedup on A100 GPU over\nSAM-ViT-H without sacrificing performance. Our code and pre-trained models are\nreleased at https://github.com/mit-han-lab/efficientvit.",
+        "translated": ""
+    },
+    {
+        "title": "Detection and Pose Estimation of flat, Texture-less Industry Objects on\n  HoloLens using synthetic Training",
+        "url": "http://arxiv.org/abs/2402.04979v1",
+        "pub_date": "2024-02-07",
+        "summary": "Current state-of-the-art 6d pose estimation is too compute intensive to be\ndeployed on edge devices, such as Microsoft HoloLens (2) or Apple iPad, both\nused for an increasing number of augmented reality applications. The quality of\nAR is greatly dependent on its capabilities to detect and overlay geometry\nwithin the scene. We propose a synthetically trained client-server-based\naugmented reality application, demonstrating state-of-the-art object pose\nestimation of metallic and texture-less industry objects on edge devices.\nSynthetic data enables training without real photographs, i.e. for\nyet-to-be-manufactured objects. Our qualitative evaluation on an AR-assisted\nsorting task, and quantitative evaluation on both renderings, as well as\nreal-world data recorded on HoloLens 2, sheds light on its real-world\napplicability.",
+        "translated": ""
+    },
+    {
+        "title": "Text or Image? What is More Important in Cross-Domain Generalization\n  Capabilities of Hate Meme Detection Models?",
+        "url": "http://arxiv.org/abs/2402.04967v1",
+        "pub_date": "2024-02-07",
+        "summary": "This paper delves into the formidable challenge of cross-domain\ngeneralization in multimodal hate meme detection, presenting compelling\nfindings. We provide enough pieces of evidence supporting the hypothesis that\nonly the textual component of hateful memes enables the existing multimodal\nclassifier to generalize across different domains, while the image component\nproves highly sensitive to a specific training dataset. The evidence includes\ndemonstrations showing that hate-text classifiers perform similarly to\nhate-meme classifiers in a zero-shot setting. Simultaneously, the introduction\nof captions generated from images of memes to the hate-meme classifier worsens\nperformance by an average F1 of 0.02. Through blackbox explanations, we\nidentify a substantial contribution of the text modality (average of 83%),\nwhich diminishes with the introduction of meme's image captions (52%).\nAdditionally, our evaluation on a newly created confounder dataset reveals\nhigher performance on text confounders as compared to image confounders with an\naverage $\\Delta$F1 of 0.18.",
+        "translated": ""
+    },
+    {
+        "title": "ConvLoRA and AdaBN based Domain Adaptation via Self-Training",
+        "url": "http://arxiv.org/abs/2402.04964v1",
+        "pub_date": "2024-02-07",
+        "summary": "Existing domain adaptation (DA) methods often involve pre-training on the\nsource domain and fine-tuning on the target domain. For multi-target domain\nadaptation, having a dedicated/separate fine-tuned network for each target\ndomain, that retain all the pre-trained model parameters, is prohibitively\nexpensive. To address this limitation, we propose Convolutional Low-Rank\nAdaptation (ConvLoRA). ConvLoRA freezes pre-trained model weights, adds\ntrainable low-rank decomposition matrices to convolutional layers, and\nbackpropagates the gradient through these matrices thus greatly reducing the\nnumber of trainable parameters. To further boost adaptation, we utilize\nAdaptive Batch Normalization (AdaBN) which computes target-specific running\nstatistics and use it along with ConvLoRA. Our method has fewer trainable\nparameters and performs better or on-par with large independent fine-tuned\nnetworks (with less than 0.9% trainable parameters of the total base model)\nwhen tested on the segmentation of Calgary-Campinas dataset containing brain\nMRI images. Our approach is simple, yet effective and can be applied to any\ndeep learning-based architecture which uses convolutional and batch\nnormalization layers. Code is available at:\nhttps://github.com/aleemsidra/ConvLoRA.",
+        "translated": ""
     }
 ]
