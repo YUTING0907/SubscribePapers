@@ -12815,5 +12815,75 @@
         "pub_date": "2024-02-19",
         "summary": "We introduce AnyGPT, an any-to-any multimodal language model that utilizes\ndiscrete representations for the unified processing of various modalities,\nincluding speech, text, images, and music. AnyGPT can be trained stably without\nany alterations to the current large language model (LLM) architecture or\ntraining paradigms. Instead, it relies exclusively on data-level preprocessing,\nfacilitating the seamless integration of new modalities into LLMs, akin to the\nincorporation of new languages. We build a multimodal text-centric dataset for\nmultimodal alignment pre-training. Utilizing generative models, we synthesize\nthe first large-scale any-to-any multimodal instruction dataset. It consists of\n108k samples of multi-turn conversations that intricately interweave various\nmodalities, thus equipping the model to handle arbitrary combinations of\nmultimodal inputs and outputs. Experimental results demonstrate that AnyGPT is\ncapable of facilitating any-to-any multimodal conversation while achieving\nperformance comparable to specialized models across all modalities, proving\nthat discrete representations can effectively and conveniently unify multiple\nmodalities within a language model. Demos are shown in\nhttps://junzhan2000.github.io/AnyGPT.github.io/",
         "translated": ""
+    },
+    {
+        "title": "How NeRFs and 3D Gaussian Splatting are Reshaping SLAM: a Survey",
+        "url": "http://arxiv.org/abs/2402.13255v1",
+        "pub_date": "2024-02-20",
+        "summary": "Over the past two decades, research in the field of Simultaneous Localization\nand Mapping (SLAM) has undergone a significant evolution, highlighting its\ncritical role in enabling autonomous exploration of unknown environments. This\nevolution ranges from hand-crafted methods, through the era of deep learning,\nto more recent developments focused on Neural Radiance Fields (NeRFs) and 3D\nGaussian Splatting (3DGS) representations. Recognizing the growing body of\nresearch and the absence of a comprehensive survey on the topic, this paper\naims to provide the first comprehensive overview of SLAM progress through the\nlens of the latest advancements in radiance fields. It sheds light on the\nbackground, evolutionary path, inherent strengths and limitations, and serves\nas a fundamental reference to highlight the dynamic progress and specific\nchallenges.",
+        "translated": ""
+    },
+    {
+        "title": "CounterCurate: Enhancing Physical and Semantic Visio-Linguistic\n  Compositional Reasoning via Counterfactual Examples",
+        "url": "http://arxiv.org/abs/2402.13254v1",
+        "pub_date": "2024-02-20",
+        "summary": "We propose CounterCurate, a framework to comprehensively improve the\nvisio-linguistic compositional reasoning capability for both contrastive and\ngenerative multimodal models. In particular, we identify two under-explored\ncritical problems: the neglect of the physically grounded reasoning (counting\nand position understanding) and the potential of using highly capable text and\nimage generation models for semantic counterfactual fine-tuning. Our work\npioneers an approach that addresses these gaps. We first spotlight the\nnear-chance performance of multimodal models like CLIP and LLaVA in physically\ngrounded compositional reasoning. We then apply simple data augmentation using\na grounded image generation model, GLIGEN, to generate finetuning data,\nresulting in significant performance improvements: +33% and +37% for CLIP and\nLLaVA, respectively, on our newly curated Flickr30k-Positions benchmark.\nMoreover, we exploit the capabilities of high-performing text generation and\nimage generation models, specifically GPT-4V and DALLE-3, to curate challenging\nsemantic counterfactuals, thereby further enhancing compositional reasoning\ncapabilities on benchmarks such as SugarCrepe, where CounterCurate outperforms\nGPT-4V.",
+        "translated": ""
+    },
+    {
+        "title": "Improving Robustness for Joint Optimization of Camera Poses and\n  Decomposed Low-Rank Tensorial Radiance Fields",
+        "url": "http://arxiv.org/abs/2402.13252v1",
+        "pub_date": "2024-02-20",
+        "summary": "In this paper, we propose an algorithm that allows joint refinement of camera\npose and scene geometry represented by decomposed low-rank tensor, using only\n2D images as supervision. First, we conduct a pilot study based on a 1D signal\nand relate our findings to 3D scenarios, where the naive joint pose\noptimization on voxel-based NeRFs can easily lead to sub-optimal solutions.\nMoreover, based on the analysis of the frequency spectrum, we propose to apply\nconvolutional Gaussian filters on 2D and 3D radiance fields for a\ncoarse-to-fine training schedule that enables joint camera pose optimization.\nLeveraging the decomposition property in decomposed low-rank tensor, our method\nachieves an equivalent effect to brute-force 3D convolution with only incurring\nlittle computational overhead. To further improve the robustness and stability\nof joint optimization, we also propose techniques of smoothed 2D supervision,\nrandomly scaled kernel parameters, and edge-guided loss mask. Extensive\nquantitative and qualitative evaluations demonstrate that our proposed\nframework achieves superior performance in novel view synthesis as well as\nrapid convergence for optimization.",
+        "translated": ""
+    },
+    {
+        "title": "FlashTex: Fast Relightable Mesh Texturing with LightControlNet",
+        "url": "http://arxiv.org/abs/2402.13251v1",
+        "pub_date": "2024-02-20",
+        "summary": "Manually creating textures for 3D meshes is time-consuming, even for expert\nvisual content creators. We propose a fast approach for automatically texturing\nan input 3D mesh based on a user-provided text prompt. Importantly, our\napproach disentangles lighting from surface material/reflectance in the\nresulting texture so that the mesh can be properly relit and rendered in any\nlighting environment. We introduce LightControlNet, a new text-to-image model\nbased on the ControlNet architecture, which allows the specification of the\ndesired lighting as a conditioning image to the model. Our text-to-texture\npipeline then constructs the texture in two stages. The first stage produces a\nsparse set of visually consistent reference views of the mesh using\nLightControlNet. The second stage applies a texture optimization based on Score\nDistillation Sampling (SDS) that works with LightControlNet to increase the\ntexture quality while disentangling surface material from lighting. Our\npipeline is significantly faster than previous text-to-texture methods, while\nproducing high-quality and relightable textures.",
+        "translated": ""
+    },
+    {
+        "title": "Video ReCap: Recursive Captioning of Hour-Long Videos",
+        "url": "http://arxiv.org/abs/2402.13250v1",
+        "pub_date": "2024-02-20",
+        "summary": "Most video captioning models are designed to process short video clips of few\nseconds and output text describing low-level visual concepts (e.g., objects,\nscenes, atomic actions). However, most real-world videos last for minutes or\nhours and have a complex hierarchical structure spanning different temporal\ngranularities. We propose Video ReCap, a recursive video captioning model that\ncan process video inputs of dramatically different lengths (from 1 second to 2\nhours) and output video captions at multiple hierarchy levels. The recursive\nvideo-language architecture exploits the synergy between different video\nhierarchies and can process hour-long videos efficiently. We utilize a\ncurriculum learning training scheme to learn the hierarchical structure of\nvideos, starting from clip-level captions describing atomic actions, then\nfocusing on segment-level descriptions, and concluding with generating\nsummaries for hour-long videos. Furthermore, we introduce Ego4D-HCap dataset by\naugmenting Ego4D with 8,267 manually collected long-range video summaries. Our\nrecursive model can flexibly generate captions at different hierarchy levels\nwhile also being useful for other complex video understanding tasks, such as\nVideoQA on EgoSchema. Data, code, and models are available at:\nhttps://sites.google.com/view/vidrecap",
+        "translated": ""
+    },
+    {
+        "title": "VADv2: End-to-End Vectorized Autonomous Driving via Probabilistic\n  Planning",
+        "url": "http://arxiv.org/abs/2402.13243v1",
+        "pub_date": "2024-02-20",
+        "summary": "Learning a human-like driving policy from large-scale driving demonstrations\nis promising, but the uncertainty and non-deterministic nature of planning make\nit challenging. In this work, to cope with the uncertainty problem, we propose\nVADv2, an end-to-end driving model based on probabilistic planning. VADv2 takes\nmulti-view image sequences as input in a streaming manner, transforms sensor\ndata into environmental token embeddings, outputs the probabilistic\ndistribution of action, and samples one action to control the vehicle. Only\nwith camera sensors, VADv2 achieves state-of-the-art closed-loop performance on\nthe CARLA Town05 benchmark, significantly outperforming all existing methods.\nIt runs stably in a fully end-to-end manner, even without the rule-based\nwrapper. Closed-loop demos are presented at https://hgao-cv.github.io/VADv2.",
+        "translated": ""
+    },
+    {
+        "title": "A Touch, Vision, and Language Dataset for Multimodal Alignment",
+        "url": "http://arxiv.org/abs/2402.13232v1",
+        "pub_date": "2024-02-20",
+        "summary": "Touch is an important sensing modality for humans, but it has not yet been\nincorporated into a multimodal generative language model. This is partially due\nto the difficulty of obtaining natural language labels for tactile data and the\ncomplexity of aligning tactile readings with both visual observations and\nlanguage descriptions. As a step towards bridging that gap, this work\nintroduces a new dataset of 44K in-the-wild vision-touch pairs, with English\nlanguage labels annotated by humans (10%) and textual pseudo-labels from GPT-4V\n(90%). We use this dataset to train a vision-language-aligned tactile encoder\nfor open-vocabulary classification and a touch-vision-language (TVL) model for\ntext generation using the trained encoder. Results suggest that by\nincorporating touch, the TVL model improves (+29% classification accuracy)\ntouch-vision-language alignment over existing models trained on any pair of\nthose modalities. Although only a small fraction of the dataset is\nhuman-labeled, the TVL model demonstrates improved visual-tactile understanding\nover GPT-4V (+12%) and open-source vision-language models (+32%) on a new\ntouch-vision understanding benchmark. Code and data:\nhttps://tactile-vlm.github.io.",
+        "translated": ""
+    },
+    {
+        "title": "How Easy is It to Fool Your Multimodal LLMs? An Empirical Analysis on\n  Deceptive Prompts",
+        "url": "http://arxiv.org/abs/2402.13220v1",
+        "pub_date": "2024-02-20",
+        "summary": "The remarkable advancements in Multimodal Large Language Models (MLLMs) have\nnot rendered them immune to challenges, particularly in the context of handling\ndeceptive information in prompts, thus producing hallucinated responses under\nsuch conditions. To quantitatively assess this vulnerability, we present\nMAD-Bench, a carefully curated benchmark that contains 850 test samples divided\ninto 6 categories, such as non-existent objects, count of objects, spatial\nrelationship, and visual confusion. We provide a comprehensive analysis of\npopular MLLMs, ranging from GPT-4V, Gemini-Pro, to open-sourced models, such as\nLLaVA-1.5 and CogVLM. Empirically, we observe significant performance gaps\nbetween GPT-4V and other models; and previous robust instruction-tuned models,\nsuch as LRV-Instruction and LLaVA-RLHF, are not effective on this new\nbenchmark. While GPT-4V achieves 75.02% accuracy on MAD-Bench, the accuracy of\nany other model in our experiments ranges from 5% to 35%. We further propose a\nremedy that adds an additional paragraph to the deceptive prompts to encourage\nmodels to think twice before answering the question. Surprisingly, this simple\nmethod can even double the accuracy; however, the absolute numbers are still\ntoo low to be satisfactory. We hope MAD-Bench can serve as a valuable benchmark\nto stimulate further research to enhance models' resilience against deceptive\nprompts.",
+        "translated": ""
+    },
+    {
+        "title": "VideoPrism: A Foundational Visual Encoder for Video Understanding",
+        "url": "http://arxiv.org/abs/2402.13217v1",
+        "pub_date": "2024-02-20",
+        "summary": "We introduce VideoPrism, a general-purpose video encoder that tackles diverse\nvideo understanding tasks with a single frozen model. We pretrain VideoPrism on\na heterogeneous corpus containing 36M high-quality video-caption pairs and 582M\nvideo clips with noisy parallel text (e.g., ASR transcripts). The pretraining\napproach improves upon masked autoencoding by global-local distillation of\nsemantic video embeddings and a token shuffling scheme, enabling VideoPrism to\nfocus primarily on the video modality while leveraging the invaluable text\nassociated with videos. We extensively test VideoPrism on four broad groups of\nvideo understanding tasks, from web video question answering to CV for science,\nachieving state-of-the-art performance on 30 out of 33 video understanding\nbenchmarks.",
+        "translated": ""
+    },
+    {
+        "title": "Design and Flight Demonstration of a Quadrotor for Urban Mapping and\n  Target Tracking Research",
+        "url": "http://arxiv.org/abs/2402.13195v1",
+        "pub_date": "2024-02-20",
+        "summary": "This paper describes the hardware design and flight demonstration of a small\nquadrotor with imaging sensors for urban mapping, hazard avoidance, and target\ntracking research. The vehicle is equipped with five cameras, including two\npairs of fisheye stereo cameras that enable a nearly omnidirectional view and a\ntwo-axis gimbaled camera. An onboard NVIDIA Jetson Orin Nano computer running\nthe Robot Operating System software is used for data collection. An autonomous\ntracking behavior was implemented to coordinate the motion of the quadrotor and\ngimbaled camera to track a moving GPS coordinate. The data collection system\nwas demonstrated through a flight test that tracked a moving GPS-tagged vehicle\nthrough a series of roads and parking lots. A map of the environment was\nreconstructed from the collected images using the Direct Sparse Odometry (DSO)\nalgorithm. The performance of the quadrotor was also characterized by acoustic\nnoise, communication range, battery voltage in hover, and maximum speed tests.",
+        "translated": ""
     }
 ]
