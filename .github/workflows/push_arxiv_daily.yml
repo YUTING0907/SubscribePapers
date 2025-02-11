@@ -15,7 +15,7 @@ jobs:
       SERVERCHAN_API_KEY: ${{ secrets.SERVERCHAN_API_KEY }}
       CAIYUN_TOKEN: ${{ secrets.CAIYUN_TOKEN }}
       QUERY: "cs.CV"
-      LIMITS: 10
+      LIMITS: 4
 
     permissions:
       issues: write
