@@ -35,7 +35,7 @@ def get_links(results, confs, filter_keywords=[], start_year=2012):
             [conf + re.search(r'\d{4}', item['href']).group(), item['href']] for item in soup.find_all(class_='toc-link')
             if re.search(r'\d{4}', item['href'])
             and int(re.search(r'\d{4}', item['href']).group()) >= start_year
-            and f'{conf}/{conf}' in item['href']
+            and f'{conf}/' in item['href']
             and all(keyword not in item['href'] for keyword in filter_keywords)
             and conf + re.search(r'\d{4}', item['href']).group() not in existing_confs
         ]
